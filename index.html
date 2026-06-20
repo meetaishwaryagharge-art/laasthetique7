@@ -1,0 +1,3408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Aesthetique — Skin, Hair &amp; Laser Clinic in Nagpur</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Marcellus&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-light: #fbf6f5;
+            --primary-dark: #103933;
+            --text-muted: #5e6d6a;
+           
+        }
+
+        body {
+            background-color: var(--bg-light);
+             font-family:'Open Sans', sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* --- Header / Navigation --- */
+        .main-header {
+            background-color: var(--bg-light);
+            padding: 15px 0;
+        }
+
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+           font-family:'Open Sans', sans-serif;
+            font-weight: bold;
+            color: var(--primary-dark) !important;
+            font-size: 1.5rem;
+            letter-spacing: 0.5px;
+        }
+
+        .navbar-brand .logo-icon {
+            background-color: var(--primary-dark);
+            color: #fff;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 8px;
+            font-size: 0.9rem;
+        }
+
+      .navbar .nav-link {
+    font-weight: 500;
+    color: #1a3026;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: #1a3026;
+}
+
+/* Button overrides mapping contact.html specs */
+.btn-dark-emerald {
+    background: #dc448d;
+    border: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 11px 28px;
+    transition: background-color 0.2s ease;
+}
+
+.btn-dark-emerald:hover {
+    background: #264537; /* Dark Slate Green matching contact.html hover blueprint */
+}
+
+/* Responsive adjustment matrix override for small displays */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background: #fdf8f5;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        margin-top: 10px;
+    }
+    .btn-dark-emerald {
+        margin-top: 15px;
+        width: 100%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+        /* --- Hero Section --- */
+        .hero-container {
+            padding: 0 25px 40px 25px;
+        }
+
+        .hero-card {
+            position: relative;
+            background-image: linear-gradient(rgba(16, 57, 51, 0.45), rgba(16, 57, 51, 0.45)), url('https://t4.ftcdn.net/jpg/02/00/86/03/360_F_200860345_JVEE9JP4uDNc8Ql1oeHOFKoqBPP8BgkL.jpg');
+            background-size: cover;
+            background-position: center 30%;
+            min-height: 580px;
+            border-radius: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px 20px;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            max-width: 820px;
+            z-index: 2;
+        }
+
+        .hero-title {
+             font-family:'Open Sans', sans-serif;
+            color: #ffffff;
+            font-size: 4rem;
+            font-weight: 400;
+            line-height: 1.15;
+            margin-bottom: 24px;
+            letter-spacing: -0.5px;
+        }
+
+        .hero-description {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.05rem;
+            line-height: 1.6;
+            max-width: 620px;
+            margin: 0 auto 35px auto;
+            font-weight: 400;
+        }
+
+        /* Secondary Transparent Button */
+        .btn-services {
+            background-color:  #dc448d;
+            color:white !important;
+            border-radius: 50px;
+            padding: 12px 30px;
+            font-weight: 500;
+            font-size: 0.95rem;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-services:hover {
+            background-color: #0ca7a1;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        /* --- Responsive Breaks --- */
+        @media (max-width: 991.98px) {
+            .hero-title {
+                font-size: 2.8rem;
+            }
+            .navbar-collapse {
+                background: var(--bg-light);
+                padding: 20px;
+                border-radius: 12px;
+                box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+                margin-top: 10px;
+            }
+            .btn-appointment {
+                margin-top: 15px;
+                width: 100%;
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 575.98px) {
+            .hero-title {
+                font-size: 2.1rem;
+            }
+            .hero-card {
+                min-height: 480px;
+            }
+            .hero-container {
+                padding: 0 12px 25px 12px;
+            }
+        }
+        :root {
+    --primary-dark-green: #143f38;
+    --soft-cream-bg: #fdfaf7;
+    --text-muted-gray: #6b7774;
+    --accent-tint: #e3deda;
+   
+}
+
+/* --- 1. Hero CTA Top Bar Configurations --- */
+.hero-cta-box {
+    position: relative;
+    z-index: 10;
+    margin-top: -60px; /* Overlaps directly over your bottom border of hero */
+    padding-bottom: 70px;
+    background-color: var(--soft-cream-bg);
+}
+
+.hero-cta-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: transparent;
+    border-bottom: 1px solid var(--accent-tint);
+    padding-bottom: 40px;
+}
+
+.hero-cta-item {
+    padding: 0 30px;
+}
+
+.hero-cta-item:not(:last-child) {
+    border-right: 1px solid var(--accent-tint);
+}
+
+.hero-cta-item-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.hero-cta-item-header .icon-box {
+    color: var(--primary-dark-green);
+    font-size: 1.25rem;
+}
+
+.hero-cta-item-title h3 {
+     font-family:'Open Sans', sans-serif;
+    color: var(--primary-dark-green);
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.hero-cta-item-content p {
+    font-family:'Open Sans', sans-serif;
+    color: var(--text-muted-gray);
+    font-size: 0.95rem;
+    margin-bottom: 4px;
+    line-height: 1.5;
+}
+
+.hero-cta-item-content p a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.hero-cta-item-content p span {
+    font-weight: 500;
+    color: #333;
+}
+
+/* --- 2. About Us Layout Components --- */
+.about-us {
+    background-color: var(--soft-cream-bg);
+    padding-bottom: 100px;
+}
+
+/* Composite Image Positions */
+.about-us-image-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 520px;
+}
+
+.about-img-1 img {
+    width: 80%;
+    border-radius: 30px;
+    display: block;
+    object-fit: cover;
+    height: 440px;
+}
+
+.about-img-2 {
+    position: absolute;
+    bottom: -40px;
+    right: 0;
+    width: 60%;
+    z-index: 2;
+}
+
+.about-img-2 img {
+    width: 100%;
+    border-radius: 20px;
+    border: 8px solid var(--soft-cream-bg);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.04);
+    object-fit: cover;
+    height: 240px;
+}
+
+/* Badge Layout styling */
+.contact-us-circle {
+    position: absolute;
+    top: 35%;
+    right: 12%;
+    z-index: 5;
+    background-color:  #dc448d;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 25px rgba(20, 63, 56, 0.2);
+}
+
+.circle-badge-text {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle-badge-text img {
+    width: 100%;
+    height: 100%;
+    animation: rotateText 14s linear infinite;
+}
+
+.circle-badge-text .arrow-inside {
+    position: absolute;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+@keyframes rotateText {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* --- About Us Text Blocks --- */
+.about-us-content {
+    padding-left: 25px;
+}
+
+.about-us-content .sub-title {
+   font-family:'Open Sans', sans-serif;
+    color: var(--text-muted-gray);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.about-us-content .sub-title .dot {
+    width: 6px;
+    height: 6px;
+    background-color: var(--primary-dark-green);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.about-us-content h2 {
+    font-family:'Open Sans', sans-serif;
+    color: var(--primary-dark-green);
+    font-size: 3.2rem;
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.about-us-content .desc-text {
+   font-family:'Open Sans', sans-serif;
+    color: var(--text-muted-gray);
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Checklist configuration */
+.about-body-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 35px 0;
+}
+
+.about-body-list ul li {
+     font-family:'Open Sans', sans-serif;
+    color: var(--text-muted-gray);
+    font-size: 1.05rem;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.about-body-list ul li i {
+    color:  #dc448d;
+    font-size: 1.2rem;
+}
+
+/* --- Control CTA Panel & Float Stat Block --- */
+.btn-dark-green {
+    background-color:  #dc448d;
+    color: #fff !important;
+    padding: 14px 32px;
+    border-radius: 50px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.btn-dark-green:hover {
+    background-color: #0d2a25;
+    transform: translateY(-2px);
+}
+
+.btn-video-play {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color:  #dc448d !important;
+    font-family: var(--font-sans);
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.btn-video-play .play-icon {
+    width: 48px;
+    height: 48px;
+    border: 1px solid var(--accent-tint);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    transition: all 0.3s ease;
+    background-color: #fff;
+}
+
+.btn-video-play:hover .play-icon {
+    background-color: var(--primary-dark-green);
+    color: #fff;
+    border-color: var(--primary-dark-green);
+    transform: scale(1.05);
+}
+
+/* Right Side Stats Counter Floating Frame */
+.about-team-member-card {
+    background-color:  #dc448d;
+    color: #fff;
+    border-radius: 20px;
+    padding: 25px 35px;
+    text-align: center;
+    min-width: 170px;
+    box-shadow: 0 10px 30px rgba(20, 63, 56, 0.15);
+}
+
+.about-team-member-card .team-card-icon {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+    opacity: 0.9;
+}
+
+.about-team-member-card h2 {
+    color: #fff;
+    font-size: 2.3rem;
+    font-family:'Open Sans', sans-serif;
+    font-weight: 700;
+    margin: 0 0 2px 0;
+}
+
+.about-team-member-card p {
+    font-family:'Open Sans', sans-serif;
+    font-size: 0.85rem;
+    margin: 0;
+    opacity: 0.8;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* --- 3. Responsive Screen Adaptations --- */
+@media (max-width: 991.98px) {
+    .hero-cta-info {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding-bottom: 25px;
+    }
+    .hero-cta-item {
+        padding: 0;
+    }
+    .hero-cta-item:not(:last-child) {
+        border-right: none;
+        border-bottom: 1px solid var(--accent-tint);
+        padding-bottom: 20px;
+    }
+    .about-us-content {
+        padding-left: 0;
+        margin-top: 60px;
+    }
+    .about-us-content h2 {
+        font-size: 2.4rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .about-img-1 img {
+        height: 340px;
+        width: 90%;
+    }
+    .about-img-2 img {
+        height: 180px;
+    }
+    .about-us-footer {
+        flex-direction: column;
+        align-items: flex-start !important;
+    }
+    .about-team-member-card {
+        width: 100%;
+    }
+}
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+    <nav class="navbar navbar-expand-lg py-3 bg-transparent">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="logo1.png" alt="La Aesthetique - Skin, Hair & Laser" style="height:55px;">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center" id="mainNavbar">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="service.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="doctor.html">Doctor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Match exactly with the contact.html styling alignment -->
+            <a href="contact.html" class="btn btn-dark-emerald rounded-pill px-4 btn-sm text-white">
+                Book Appointment
+                <i class="fa-solid fa-arrow-right ms-1 small"></i>
+            </a>
+        </div>
+    </nav>
+</header>
+    <section class="hero-container">
+        <div class="container-fluid p-0">
+            <div class="hero-card">
+                <div class="hero-content" data-aos="fade-up">
+                    <h1 class="hero-title">Advanced Skin, Hair &amp; Laser Care in Nagpur</h1>
+                    <p class="hero-description">Expert dermatology &amp; aesthetic treatments by Dr. Pradnya Asutkar. Acne, pigmentation, PRP, hair restoration, anti-ageing &amp; more — tailored for your skin.</p>
+                    <a href="service.html" class="btn-services">View Our Services <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section><br><br><br>
+    <div class="hero-cta-box">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="hero-cta-info">
+                    <div class="hero-cta-item" data-aos="fade-up" data-aos-delay="0">
+                        <div class="hero-cta-item-header"><br>
+                          
+                            <div class="hero-cta-item-title">
+                                <h3>Contact Us</h3>
+                            </div>
+                        </div>
+                        <div class="hero-cta-item-content">
+                            <p><a href="mailto:info@laaesthetique.in"><span>Email:</span> info@laaesthetique.in</a></p>
+                            <p><a href="tel:+918459323304"><span>Phone:</span> +91 84593 23304</a></p>
+                        </div>
+                    </div>
+                    <div class="hero-cta-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="hero-cta-item-header">
+                           
+                            <div class="hero-cta-item-title">
+                                <h3>Our Location</h3>
+                            </div>
+                        </div>
+                        <div class="hero-cta-item-content">
+                            <p>La Aesthetique, Skin, Hair &<br>Laser Clinic, Nagpur, Maharashtra</p>
+                        </div>
+                    </div>
+                    <div class="hero-cta-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="hero-cta-item-header">
+                           
+                            <div class="hero-cta-item-title">
+                                <h3>Working Hours</h3>
+                            </div>
+                        </div>
+                        <div class="hero-cta-item-content">
+                            <p>Monday - Friday : 6:00 pm to 9:30 pm</p>
+                            
+                        </div>
+                    </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="about-us">
+    <div class="container">
+        <div class="row align-items-center">
+            
+            <div class="col-lg-6 position-relative mb-5 mb-lg-0">
+                <div class="about-us-image-wrapper" data-aos="fade-right">
+                    <div class="about-img-1">
+                        <img src="https://img.magnific.com/free-photo/young-beautiful-blonde-girl-cares-face-skin-with-moisturizer-front-mirror_496169-939.jpg?semt=ais_hybrid&w=740&q=80" alt="Skin Care Consultation">
+                    </div>
+                    
+                    <div class="about-img-2">
+                        <img src="https://theskinstory.in/cdn/shop/articles/skin-care-guide-for-beginners-4777211.png?v=1768888995" alt="Dermatology Treatment">
+                    </div>
+
+                    <a href="contact.html" class="contact-circle-link">
+                    <div class="contact-us-circle">
+                      <div class="circle-badge-text">
+                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'><path id='textPath' d='M 50,50 m -35,0 a 35,35 0 1,1 70,0 a 35,35 0 1,1 -70,0' fill='none'/><text font-family='DM Sans' font-size='8.5' fill='%23ffffff' letter-spacing='2.5'><textPath href='%23textPath'> * Contact us * Contact us * Contact us</textPath></text></svg>" alt="Contact text circle">
+                      <div class="arrow-inside">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                     </div>
+                 </div>
+            </div>
+      </a>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="about-us-content" data-aos="fade-left">
+                    <div class="section-title">
+                        <span class="sub-title"><span class="dot"></span> About Us</span>
+                        <h2>Empowering Your Skin with Expert Care & Solutions</h2>
+                        <p class="desc-text">La Aesthetique is Nagpur's trusted skin, hair &amp; laser clinic led by Dr. Pradnya Asutkar. We combine advanced medical dermatology with personalized aesthetic care for every skin type.</p>
+                    </div>
+
+                    <div class="about-body-list">
+                        <ul>
+                            <li><i class="fa-regular fa-square-check"></i> Commitment to Excellence in Skin Health</li>
+                            <li><i class="fa-regular fa-square-check"></i> State-of-the-Art Facility and Technology</li>
+                            <li><i class="fa-regular fa-square-check"></i> Trusted by Thousands of Satisfied Patients</li>
+                        </ul>
+                    </div>
+
+                    <div class="about-us-footer d-flex flex-wrap align-items-center justify-content-between gap-4 mt-4">
+                        <div class="about-action-btns d-flex align-items-center gap-3">
+                            <a href="about.html" class="btn-default btn-dark-green">About More <i class="fa-solid fa-arrow-right-long ms-2"></i></a>
+                            <a href="https://www.youtube.com/watch?v=Y-x0efG1seA" class="popup-video btn-video-play">
+                                <span class="play-icon"><i class="fa-solid fa-play"></i></span> Play Session
+                            </a>
+                        </div>
+
+                        <div class="about-team-member-card">
+                            <div class="team-card-icon">
+                                <i class="fa-solid fa-users-line"></i>
+                            </div>
+                            <h2><span class="counter">15</span>+</h2>
+                            <p>Expert Team Members</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<div class="about-counter-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="about-counter-list">
+                    
+                    <div class="about-counter-item" data-aos="fade-up" data-aos-delay="0">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-grip"></i>
+                        </div>
+                        <div class="about-counter-content">
+                            <h2><span class="counter">96</span>%</h2>
+                            <p>Patient Satisfaction Rate</p>
+                        </div>
+                    </div>
+
+                    <div class="about-counter-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-circle-nodes"></i>
+                        </div>
+                        <div class="about-counter-content">
+                            <h2><span class="counter">12</span>+</h2>
+                            <p>Years Of Experience</p>
+                        </div>
+                    </div>
+
+                    <div class="about-counter-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-gear"></i>
+                        </div>
+                        <div class="about-counter-content">
+                            <h2><span class="counter">1000</span>+</h2>
+                            <p>Successful Surgeries</p>
+                        </div>
+                    </div>
+
+                    <div class="about-counter-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="icon-box">
+                            <i class="fa-regular fa-gem"></i>
+                        </div>
+                        <div class="about-counter-content">
+                            <h2><span class="counter">30</span>+</h2>
+                            <p>State-Of-The-Art Facilitie</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+:root {
+    --primary-dark-green: #143f38;
+    --soft-cream-bg: #fdfaf7;
+    --text-muted-gray: #7a8683;
+    --accent-tint: #e3deda;
+   
+}
+
+/* --- About Counter List Styling --- */
+.about-counter-section {
+    background-color: var(--soft-cream-bg);
+    padding: 60px 0 80px 0;
+}
+
+.about-counter-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    border-top: 1px solid var(--accent-tint);
+    padding-top: 50px;
+}
+
+.about-counter-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex: 1;
+    min-width: 220px;
+}
+
+.about-counter-item .icon-box {
+    color: var(--primary-dark-green);
+    font-size: 2.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+}
+
+/* Specific adjustment for the first stacked-dot icon look */
+.about-counter-item .icon-box .fa-grip {
+    font-size: 1.8rem;
+    letter-spacing: -1px;
+}
+
+.about-counter-content h2 {
+    font-family:'Open Sans', sans-serif;
+    color: var(--primary-dark-green);
+    font-size: 2.8rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 0 0 4px 0;
+}
+
+.about-counter-content p {
+     font-family:'Open Sans', sans-serif;
+    color: var(--text-muted-gray);
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin: 0;
+    white-space: nowrap;
+}
+
+/* --- Responsive Adaptations --- */
+@media (max-width: 1199.98px) {
+    .about-counter-content h2 {
+        font-size: 2.4rem;
+    }
+    .about-counter-item {
+        min-width: calc(50% - 15px); /* Drops smoothly into a clean 2x2 grid */
+    }
+}
+
+@media (max-width: 575.98px) {
+    .about-counter-list {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 35px;
+        padding-left: 15px;
+    }
+    .about-counter-item {
+        width: 100%;
+    }
+    .about-counter-content p {
+        white-space: normal;
+    }
+}
+</style>
+<section class="our-services-section">
+    <div class="container">
+        
+        <div class="row justify-content-center text-center mb-5" data-aos="fade-up">
+            <div class="col-lg-8">
+                <span class="sub-title"><span class="dot"></span> Our Services</span>
+                <h2 class="services-main-title">Comprehensive dermatology services for every skin need</h2>
+                <p class="services-desc">From preventive care to specialized treatments, our wide range of services is designed to support your health at every stage.</p>
+            </div>
+        </div>
+        
+        <div class="services-grid">
+            
+            <div class="service-card-item" data-aos="fade-up" data-aos-delay="0">
+                <div class="service-image-box">
+                    <img src="https://dermetclinics.com/wp-content/uploads/2024/10/New-Project-2024-10-28T122155.730.jpg" alt="Clinical Dermatology">
+                </div>
+                <div class="service-card-content">
+                    <h3>Clinical Dermatology</h3>
+                    <p>Diagnosis and treatment of all skin diseases including fungal infections, psoriasis, vitiligo, eczema, allergies, autoimmune skin conditions and...</p>
+                    <a href="Clinical Dermatology.html" class="explore-link">Explore Clinical Dermatology <span class="arrow">&rarr;</span></a>
+                </div>
+            </div>
+
+            <div class="service-card-item active-highlight" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-image-box">
+                    <img src="https://themedermatology.com/wp-content/uploads/2024/08/dfb.png" alt="Skin Treatments">
+                </div>
+                <div class="service-card-content">
+                    <h3>Skin Treatments</h3>
+                    <p>Comprehensive treatments for acne, pigmentation, scars, infections, allergies, skin rejuvenation, and chronic skin disorders using modern dermatology...</p>
+                    <a href="skin.html" class="explore-link">Explore Skin Treatments <span class="arrow">&rarr;</span></a>
+                </div>
+            </div>
+
+            <div class="service-card-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-image-box">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuJ1A2zG61hQXCL8YTXuFaxu0wfr9YsbYCDQ&s" alt="Hair Treatments">
+                </div>
+                <div class="service-card-content">
+                    <h3>Hair Treatments</h3>
+                    <p>Advanced hair restoration and scalp treatments for hair fall, thinning hair, baldness, dandruff, and scalp health improvement.</p>
+                    <a href="hair.html" class="explore-link">Explore Hair Treatments <span class="arrow">&rarr;</span></a>
+                </div>
+            </div>
+
+            <div class="service-card-item" data-aos="fade-up" data-aos-delay="0">
+                <div class="service-image-box">
+                    <img src="https://www.glowskinlaser.com/wp-content/uploads/2024/12/skin-treatment-banner-1568x735.jpg" alt="Laser Treatments">
+                </div>
+                <div class="service-card-content">
+                    <h3>Laser Treatments</h3>
+                    <p>State-of-the-art laser procedures for skin rejuvenation, permanent hair reduction, tattoo removal, pigmentation correction, and scar...</p>
+                    <a href="laser.html" class="explore-link">Explore Laser Treatments <span class="arrow">&rarr;</span></a>
+                </div>
+            </div>
+
+            <div class="service-card-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-image-box">
+                    <img src="https://www.vargasfaceandskin.com/wp-content/uploads/sites/300/2025/05/botox-injections-1.jpg" alt="Anti-Ageing Treatments">
+                </div>
+                <div class="service-card-content">
+                    <h3>Anti-Ageing Treatments</h3>
+                    <p>Advanced anti-ageing procedures to restore youthful skin, improve elasticity, reduce wrinkles, and enhance facial contours.</p>
+                    <a href="Anti-Ageing Treatments.html" class="explore-link">Explore Anti-Ageing Treatments <span class="arrow">&rarr;</span></a>
+                </div>
+            </div>
+
+            <div class="service-card-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-image-box">
+                    <img src="https://skinrichclinic.whitecoats.com/wp-content/uploads/sites/142/2025/03/206853-1-67ea749514a6d.webp" alt="Bridal Package">
+                </div>
+                <div class="service-card-content">
+                    <h3>Bridal Package</h3>
+                    <p>Customised pre-bridal and groom skin, hair and glow programs designed to make you camera-ready for your big day.</p>
+                    <a href="bridal.html" class="explore-link">Explore Bridal Package <span class="arrow">&rarr;</span></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-12 text-center section-footer-text">
+                <p>Personalized dermatology solutions for your unique needs. <a href="contact.html">Contact us today!</a></p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<style>
+:root {
+    --primary-dark-green: #143f38;
+    --soft-cream-bg: #fdfaf7;
+    --text-dark: #1a2b27;
+    --text-muted-gray: #62726f;
+    --card-border-radius: 16px;
+ 
+}
+
+.our-services-section {
+    background-color: var(--soft-cream-bg);
+    padding: 80px 0;
+}
+
+/* --- Typography Setup --- */
+.our-services-section .sub-title {
+     font-family:'Open Sans', sans-serif;
+    color: var(--text-muted-gray);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.our-services-section .sub-title .dot {
+    width: 6px;
+    height: 6px;
+    background-color: var(--primary-dark-green);
+    border-radius: 50%;
+}
+
+.services-main-title {
+    font-family:'Open Sans', sans-serif;
+    color: var(--primary-dark-green);
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 1.25;
+    margin-bottom: 20px;
+}
+
+.services-desc {
+   font-family:'Open Sans', sans-serif;
+    color: var(--text-muted-gray);
+    font-size: 1.05rem;
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+/* --- Clean Grid System --- */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 20px;
+}
+
+/* --- Uniform Clean Cards --- */
+.service-card-item {
+    background: #ffffff;
+    border-radius: var(--card-border-radius);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.3s ease;
+}
+
+.service-image-box {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.service-image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.service-card-content {
+    padding: 28px 24px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.service-card-content h3 {
+    font-family:'Open Sans', sans-serif;
+    color: var(--text-dark);
+    font-size: 1.35rem;
+    margin-bottom: 14px;
+    font-weight: 500;
+}
+
+.service-card-content p {
+     font-family:'Open Sans', sans-serif;
+    color: var(--text-muted-gray);
+    font-size: 0.92rem;
+    line-height: 1.6;
+    margin-bottom: 24px;
+    flex-grow: 1; /* Pushes interactive elements evenly to the baseline */
+}
+
+/* --- Minimal Elegant Links --- */
+.explore-link {
+   font-family:'Open Sans', sans-serif;
+    color:  #dc448d;
+    font-size: 0.88rem;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: auto;
+    transition: color 0.2s ease;
+}
+
+.explore-link .arrow {
+    transition: transform 0.2s ease;
+}
+
+/* --- Interactions & Highlights --- */
+.service-card-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(20, 63, 56, 0.08);
+}
+
+.service-card-item:hover .service-image-box img {
+    transform: scale(1.04);
+}
+
+.service-card-item:hover .explore-link {
+    color: #000000;
+}
+
+.service-card-item:hover .explore-link .arrow {
+    transform: translateX(4px);
+}
+
+/* Optional Highlight Treatment for Card 2 */
+.service-card-item.active-highlight {
+    box-shadow: 0 4px 25px rgba(20, 63, 56, 0.05);
+}
+
+/* --- Footer Elements --- */
+.section-footer-text p {
+    font-family:'Open Sans', sans-serif;
+    color: var(--text-muted-gray);
+    font-size: 1rem;
+}
+
+.section-footer-text p a {
+    color: #dc448d;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+/* --- Responsive Breakpoints --- */
+@media (max-width: 991.98px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+    .services-main-title {
+        font-size: 2.1rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+        max-width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .our-services-section {
+        padding: 60px 0;
+    }
+}
+</style>
+    <section class="dermatology-section py-5 d-flex align-items-center">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        
+        <div class="col-lg-6 content-fade-in">
+          <span class="sub-title text-uppercase fw-semibold d-inline-block mb-3">
+            <span class="dot-icon">•</span> Why Choose Us
+          </span>
+          <h2 class="main-heading mb-4">Why choose us for all your dermatology needs</h2>
+          <p class="description mb-5">
+            La Aesthetique is Nagpur's trusted skin, hair &amp; laser clinic led by Dr. Pradnya Asutkar. We combine advanced medical dermatology with personalized aesthetic care for every skin type.
+          </p>
+
+          <div class="feature-item d-flex align-items-start mb-4">
+            <div class="icon-box d-flex align-items-center justify-content-center me-4">
+              <i class="fa-solid fa-crosshairs"></i>
+            </div>
+            <div>
+              <h4 class="feature-title mb-2">Personalized, compassionate care</h4>
+              <p class="feature-text text-muted mb-0">
+                We believe that every patient is unique. That's why we take the time to understand your specific needs and tailor treatment plans.
+              </p>
+            </div>
+          </div>
+
+          <div class="feature-item d-flex align-items-start">
+            <div class="icon-box d-flex align-items-center justify-content-center me-4">
+              <i class="fa-solid fa-shapes"></i>
+            </div>
+            <div>
+              <h4 class="feature-title mb-2">Comprehensive care for all skin needs</h4>
+              <p class="feature-text text-muted mb-0">
+                Whether you're seeking medical dermatology, cosmetic treatments, or preventive care, we offer a comprehensive range of services.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 image-zoom-in">
+          <div class="image-wrapper text-center">
+            <img src="why-choose-image.jpg" alt="Dermatology treatment" class="img-fluid custom-rounded shadow-sm">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <style>
+  /* Google Fonts for a premium look */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+body {
+  font-family:'Open Sans', sans-serif;
+  background-color: #fdf8f5; /* Warm, soft background matching your image */
+  color: #333333;
+}
+
+.dermatology-section {
+  min-height: 100vh;
+}
+
+/* Typography matching design */
+.sub-title {
+  font-size: 0.9rem;
+  color: #556b63; /* Elegant muted green tint */
+  letter-spacing: 0.5px;
+}
+
+.dot-icon {
+  margin-right: 5px;
+  font-size: 1.2rem;
+  vertical-align: middle;
+}
+
+.main-heading {
+  font-family:'Open Sans', sans-serif;
+  font-size: 2.75rem;
+  font-weight: 500;
+  color: #1a3026; /* Dark slate green */
+  line-height: 1.2;
+}
+
+.description {
+  color: #667085;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+/* Feature Component Styling */
+.feature-title {
+  font-family:'Open Sans', sans-serif;
+  color: #1a3026;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.feature-text {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Custom Boxed Icons */
+.icon-box {
+  background-color: #f4ede8; /* Soft warm square background */
+  color: #dc448d;
+  min-width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  font-size: 1.25rem;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.feature-item:hover .icon-box {
+  transform: scale(1.05);
+  background-color: #eae1da;
+}
+
+/* Image Specific Styling */
+.custom-rounded {
+  border-radius: 32px; /* Smooth heavy corners matching your visual */
+  object-fit: cover;
+  width: 100%;
+  max-height: 550px;
+}
+
+/* --- JS Scroll Animation Initial States --- */
+.content-fade-in, .image-zoom-in {
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.content-fade-in {
+  transform: translateY(30px);
+}
+
+.image-zoom-in {
+  transform: scale(0.95);
+}
+
+/* Animation trigger classes */
+.content-fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.image-zoom-in.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Responsive Overrides */
+@media (max-width: 991.98px) {
+  .main-heading {
+    font-size: 2.2rem;
+  }
+  .dermatology-section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+</style>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+  const observerOptions = {
+    root: null, // viewport
+    rootMargin: "0px",
+    threshold: 0.15 // triggers when 15% of the element is visible
+  };
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target); // Stop tracking once animated
+      }
+    });
+  }, observerOptions);
+
+  // Target both columns for smooth loading
+  const animatedElements = document.querySelectorAll(".content-fade-in, .image-zoom-in");
+  animatedElements.forEach(el => observer.observe(el));
+});
+</script>
+<section class="process-section py-5 d-flex align-items-center">
+    <div class="container container-custom shadow-sm overflow-hidden">
+      <div class="row g-0">
+        
+        <div class="col-lg-6 position-relative image-column" data-aos="fade-right">
+          <img src="https://dermatiqua.com/assets/procedure-room-Ck0BgysE.jpg" alt="Dermatology procedure" class="process-img">
+          
+          <div class="video-overlay-pane d-flex align-items-end p-4 p-md-5">
+            <a href="#" class="video-play-btn d-flex align-items-center text-decoration-none">
+              <div class="play-icon-wrap d-flex align-items-center justify-content-center me-3">
+                <i class="fa-solid fa-play"></i>
+              </div>
+              <div class="text-white">
+                <span class="d-block small-label text-uppercase opacity-75">Our process</span>
+                <h4 class="play-heading m-0">Watch our procedure</h4>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-6 content-column d-flex flex-column justify-content-center p-4 p-md-5 position-relative" data-aos="fade-left">
+          <div class="floral-decor position-absolute top-0 end-0 p-4 opacity-25 d-none d-md-block">
+            <i class="fa-solid fa-seedling fa-2xl text-success"></i>
+          </div>
+
+          <span class="sub-title text-uppercase fw-semibold d-inline-block mb-3">
+            <span class="dot-icon">•</span> Our Process
+          </span>
+          <h2 class="main-heading mb-4">Expert dermatology care <br class="d-none d-md-inline">for healthy, radiant skin</h2>
+          <p class="description mb-4">
+            From preventive care to specialized treatments, our wide range of services is designed to support your health at every stage.
+          </p>
+
+          <div class="row checklist-grid g-3 mb-5">
+            <div class="col-sm-6">
+              <div class="check-item d-flex align-items-center">
+                <i class="fa-regular fa-square-check me-2 check-icon"></i>
+                <span>Expert Dermatologists</span>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="check-item d-flex align-items-center">
+                <i class="fa-regular fa-square-check me-2 check-icon"></i>
+                <span>Personalized Care</span>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="check-item d-flex align-items-center">
+                <i class="fa-regular fa-square-check me-2 check-icon"></i>
+                <span>Advanced Technology</span>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="check-item d-flex align-items-center">
+                <i class="fa-regular fa-square-check me-2 check-icon"></i>
+                <span>Comprehensive Services</span>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="check-item d-flex align-items-center">
+                <i class="fa-regular fa-square-check me-2 check-icon"></i>
+                <span>Effective Solutions</span>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="check-item d-flex align-items-center">
+                <i class="fa-regular fa-square-check me-2 check-icon"></i>
+                <span>Comfortable Environment</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="action-wrap">
+            
+            <p class="booking-text small text-muted mt-2 mb-0">
+              Your skin's transformations a starts here - <a href="contact.html" class="text-dark fw-bold text-decoration-underline color: #dc448d">Book Today!</a>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+body {
+  font-family:'Open Sans', sans-serif;
+  background-color: #fcfcfc;
+  color: #333333;
+}
+
+.process-section {
+  min-height: 100vh;
+}
+
+/* Master Wrapper matching image design roundings */
+.container-custom {
+  background-color: #f8f4f2; /* Pale pinkish-white background */
+  border-radius: 28px;
+  max-width: 1200px;
+}
+
+/* Left Image Column */
+.image-column {
+  min-height: 450px;
+}
+
+.process-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Dark Green Gradient Overlay over the image base */
+.video-overlay-pane {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60%;
+  background: linear-gradient(to top, rgba(12, 167, 161, 0.98) 0%, rgba(12, 167, 161, 0.5) 20%, transparent 100%);
+}
+
+/* Video Button Elements */
+.play-icon-wrap {
+  width: 52px;
+  height: 52px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.video-play-btn:hover .play-icon-wrap {
+  background-color: #ffffff;
+  color:  #dc448d;
+  transform: scale(1.08);
+}
+
+.small-label {
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+}
+
+.play-heading {
+  font-family:'Open Sans', sans-serif;
+  font-weight: 500;
+  font-size: 1.75rem;
+}
+
+/* Right Content Column */
+.content-column {
+  background-color: #fcf8f6; /* Very subtle warm inner background variant */
+}
+
+.sub-title {
+  font-size: 0.85rem;
+  color: #616e68;
+  letter-spacing: 0.5px;
+}
+
+.dot-icon {
+  font-size: 1.1rem;
+  vertical-align: middle;
+}
+
+.main-heading {
+  font-family:'Open Sans', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #14352b; /* Deep forest green */
+  line-height: 1.25;
+}
+
+.description {
+  color: #707774;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Checklist Styling */
+.check-item {
+  color: #7c8581;
+  font-size: 0.95rem;
+}
+
+.check-icon {
+  color: #dc448d;
+  font-size: 1.1rem;
+}
+
+/* Solid CTA Button Styling */
+.btn-cta {
+  background-color: #dc448d;
+  border: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-radius: 20px;
+  padding: 10px 28px;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.btn-cta:hover {
+  background-color: #1d473b;
+  transform: translateY(-1px);
+}
+
+.btn-arrow {
+  font-size: 0.8rem;
+}
+
+/* Adjust layout rules dynamically across screen widths */
+@media (max-width: 991.98px) {
+  .container-custom {
+    border-radius: 16px;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+  .image-column {
+    min-height: 350px;
+  }
+  .main-heading {
+    font-size: 2rem;
+  }
+}
+  </style>
+  <section class="how-we-work-section py-5 d-flex align-items-center">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        
+        <div class="col-lg-6">
+          <span class="sub-title text-uppercase fw-semibold d-inline-block mb-3">
+            <span class="dot-icon">•</span> How We Work
+          </span>
+          <h2 class="main-heading mb-4">How we work: a commitment to your skin health</h2>
+          <p class="description mb-5">
+            La Aesthetique is Nagpur's trusted skin, hair &amp; laser clinic led by Dr. Pradnya Asutkar. We combine advanced medical dermatology with personalized aesthetic care for every skin type.
+          </p>
+
+          <div class="steps-wrapper">
+            
+            <div class="step-item d-flex align-items-start pb-4 mb-4 border-bottom-divider">
+              <div class="step-number me-4">01</div>
+              <div>
+                <h4 class="step-title mb-2">Personalized Consultation</h4>
+                <p class="step-text text-muted mb-0">
+                  This helps us create a customized treatment plan that aligns with your specific needs and expectations.
+                </p>
+              </div>
+            </div>
+
+            <div class="step-item d-flex align-items-start pb-4 mb-4 border-bottom-divider">
+              <div class="step-number me-4">02</div>
+              <div>
+                <h4 class="step-title mb-2">Tailored Treatment Plans</h4>
+                <p class="step-text text-muted mb-0">
+                  This helps us create a customized treatment plan that aligns with your specific needs and expectations.
+                </p>
+              </div>
+            </div>
+
+            <div class="step-item d-flex align-items-start">
+              <div class="step-number me-4">03</div>
+              <div>
+                <h4 class="step-title mb-2">Continuous Care & Follow-Up</h4>
+                <p class="step-text text-muted mb-0">
+                  This helps us create a customized treatment plan that aligns with your specific needs and expectations.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="image-card-container position-relative overflow-hidden shadow-sm">
+            <img src="how-we-work-image.jpg" alt="Skin treatment close-up" class="card-img-main">
+            
+            <div class="contact-overlay-pane p-4 p-md-5 d-flex flex-column justify-content-end">
+              <h3 class="contact-heading text-white mb-4">
+                Have Questions? We're Here <br>to Help You!
+              </h3>
+              
+              <a href="tel:+919822012345" class="phone-link d-inline-flex align-items-center text-decoration-none">
+                <div class="phone-icon-box d-flex align-items-center justify-content-center me-3">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <span class="phone-number text-white fw-medium"> +91 84593 23304</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+body {
+   font-family:'Open Sans', sans-serif;
+  background-color: #fdf8f5; /* Premium soft background canvas */
+  color: #333333;
+}
+
+.how-we-work-section {
+  min-height: 100vh;
+}
+
+/* Typography Base styling */
+.sub-title {
+  font-size: 0.9rem;
+  color: #556b63;
+  letter-spacing: 0.5px;
+}
+
+.dot-icon {
+  margin-right: 5px;
+  font-size: 1.2rem;
+  vertical-align: middle;
+}
+
+.main-heading {
+  font-family:'Open Sans', sans-serif;
+  font-size: 2.75rem;
+  font-weight: 500;
+  color: #1a3026; /* Signature deep slate green */
+  line-height: 1.2;
+}
+
+.description {
+  color: #667085;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+/* Steps Lists formatting */
+.step-number {
+ font-family:'Open Sans', sans-serif;
+  font-size: 2.25rem;
+  font-weight: 400;
+  color:  #dc448d;
+  line-height: 1;
+}
+
+.step-title {
+  font-family:'Open Sans', sans-serif;
+  color: #1a3026;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.step-text {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Custom border rule separating blocks cleanly */
+.border-bottom-divider {
+  border-bottom: 1px solid #e2d9d4;
+}
+
+/* Image Card & Contact Overlay Component */
+.image-card-container {
+  border-radius: 32px; /* Heavy round canvas layout */
+  height: 580px;
+  width: 100%;
+}
+
+.card-img-main {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Embedded interactive pane at the bottom of image card */
+.contact-overlay-pane {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 55%;
+  background: linear-gradient(to top, rgba(12, 167, 161, 0.98) 0%, rgba(12, 167, 161, 0.5) 20%, transparent 100%);
+}
+
+.contact-heading {
+  font-family:'Open Sans', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+/* White round clickable Phone Box item */
+.phone-icon-box {
+  background-color: #ffffff;
+  color: #dc448d;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  transition: transform 0.25s ease;
+}
+
+.phone-link:hover .phone-icon-box {
+  transform: scale(1.08);
+}
+
+.phone-number {
+  font-size: 1.05rem;
+  letter-spacing: 0.3px;
+}
+
+/* Responsive adjustment rulesets */
+@media (max-width: 991.98px) {
+  .main-heading {
+    font-size: 2.2rem;
+  }
+  .image-card-container {
+    height: 480px;
+  }
+}
+  </style>
+  <section class="benefits-section py-5">
+    <div class="container container-dark shadow p-4 p-md-5 position-relative overflow-hidden">
+      
+      <div class="decor-branch top-left d-none d-lg-block"></div>
+      <div class="decor-branch bottom-right d-none d-lg-block"></div>
+
+      <div class="text-center mb-5 target-header" data-aos="fade-up">
+        <span class="sub-title-light text-uppercase fw-semibold d-inline-block mb-2">
+          • Our Benefits
+        </span>
+        <h2 class="main-heading-light mb-3">Exceptional dermatology, every step of <br class="d-none d-md-inline">the way</h2>
+        <p class="description-light mx-auto">
+          Experience personalized care, advanced treatments, and visible results with our expert dermatology services.
+        </p>
+      </div>
+
+      <div class="row align-items-center g-4 layout-grid">
+        
+        <div class="col-lg-4 order-2 order-lg-1" data-aos="fade-right">
+          <div class="d-flex flex-column gap-5">
+            
+            <div class="benefit-item d-flex flex-row-reverse flex-lg-row align-items-center text-start text-lg-end">
+              <div class="benefit-content me-0 me-lg-3 ms-3 ms-lg-0">
+                <h4 class="benefit-title">Expert Dermatologists</h4>
+                <p class="benefit-text">Our team consists board-certified dermatologists with experience</p>
+              </div>
+              <div class="icon-sphere flex-shrink-0">
+                <i class="fa-solid fa-graduation-cap"></i>
+              </div>
+            </div>
+
+            <div class="benefit-item d-flex flex-row-reverse flex-lg-row align-items-center text-start text-lg-end">
+              <div class="benefit-content me-0 me-lg-3 ms-3 ms-lg-0">
+                <h4 class="benefit-title">Advanced Technology</h4>
+                <p class="benefit-text">We use cutting-edge equipment and innovative techniques</p>
+              </div>
+              <div class="icon-sphere flex-shrink-0">
+                <i class="fa-solid fa-microscope"></i>
+              </div>
+            </div>
+
+            <div class="benefit-item d-flex flex-row-reverse flex-lg-row align-items-center text-start text-lg-end">
+              <div class="benefit-content me-0 me-lg-3 ms-3 ms-lg-0">
+                <h4 class="benefit-title">Personalized Care</h4>
+                <p class="benefit-text">Every treatment plan is tailored to your unique skin type, concerns</p>
+              </div>
+              <div class="icon-sphere flex-shrink-0">
+                <i class="fa-solid fa-sliders"></i>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-lg-4 order-1 order-lg-2 text-center my-4 my-lg-0" data-aos="zoom-in">
+          <div class="oval-image-wrapper mx-auto">
+            <img src="our-benefit-image.jpg" alt="Smiling patient" class="oval-img">
+          </div>
+        </div>
+
+        <div class="col-lg-4 order-3 order-lg-3" data-aos="fade-left">
+          <div class="d-flex flex-column gap-5">
+            
+            <div class="benefit-item d-flex align-items-center text-start">
+              <div class="icon-sphere flex-shrink-0 me-3">
+                <i class="fa-solid fa-hand-holding-medical"></i>
+              </div>
+              <div class="benefit-content">
+                <h4 class="benefit-title">Comprehensive Services</h4>
+                <p class="benefit-text">From medical dermatology cosmetic enhancements, we offer a treatment</p>
+              </div>
+            </div>
+
+            <div class="benefit-item d-flex align-items-center text-start">
+              <div class="icon-sphere flex-shrink-0 me-3">
+                <i class="fa-solid fa-shield-halved"></i>
+              </div>
+              <div class="benefit-content">
+                <h4 class="benefit-title">High Safety Standards</h4>
+                <p class="benefit-text">Your safety is our priority. We adhere to strict hygiene and safety protocols</p>
+              </div>
+            </div>
+
+            <div class="benefit-item d-flex align-items-center text-start">
+              <div class="icon-sphere flex-shrink-0 me-3">
+                <i class="fa-solid fa-spa"></i>
+              </div>
+              <div class="benefit-content">
+                <h4 class="benefit-title">Comfortable Environment</h4>
+                <p class="benefit-text">Our clinic provides a welcoming and stress-free atmosphere</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+body {
+  font-family:'Open Sans', sans-serif;
+  background-color: #fdf8f5;
+}
+
+/* Container Box Layout */
+.container-dark {
+  background-color: #0ca7a1; /* Master Deep Forest Green Canvas */
+  border-radius: 32px;
+  color: #ffffff;
+}
+
+/* Header Text Theme */
+.sub-title-light {
+  font-size: 0.85rem;
+  color: #a4beab;
+  letter-spacing: 0.5px;
+}
+
+.main-heading-light {
+  font-family:'Open Sans', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+.description-light {
+  color: #cddbd1;
+  font-size: 0.95rem;
+  max-width: 580px;
+  line-height: 1.5;
+}
+
+/* Symmetric Feature Items */
+.benefit-title {
+  font-family:'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 6px;
+}
+
+.benefit-text {
+  font-size: 0.85rem;
+  color: #cddbd1;
+  line-height: 1.4;
+  margin-bottom: 0;
+}
+
+/* Pristine Rounded White Spheres for Icons */
+.icon-sphere {
+  width: 48px;
+  height: 48px;
+  background-color: #ffffff;
+  color: #1e4638;
+  border-radius: 12px; /* Smooth square-round look matching mockup */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.15rem;
+}
+
+/* Central Portrait Oval Element */
+.oval-image-wrapper {
+  width: 250px;
+  height: 360px;
+  border-radius: 150px; /* Perfect oval rounding architecture */
+  overflow: hidden;
+  border: 4px solid rgba(255, 255, 255, 0.15);
+}
+
+.oval-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Optional line art decorations matching background */
+.decor-branch {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  opacity: 0.08;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='1'%3E%3Cpath d='M2 22C12 22 17 12 22 2M12 14c2-3 5-4 7-5M7 18c1-2 3-3 5-3'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.decor-branch.top-left { top: 20px; left: 20px; transform: rotate(0deg); }
+.decor-branch.bottom-right { bottom: 20px; right: 20px; transform: rotate(180deg); }
+
+/* Grid Responsive Flipping Point */
+@media (max-width: 991.98px) {
+  .main-heading-light {
+    font-size: 1.9rem;
+  }
+  .d-flex.flex-column.gap-5 {
+    gap: 2rem !important; /* Tightens item gap spacing structure on tablets/mobile */
+  }
+}
+  </style>
+  <section class="gallery-section py-5">
+    <div class="container text-center">
+      
+      <div class="mb-5 header-block" data-aos="fade-up">
+        <span class="sub-title text-uppercase fw-semibold d-inline-block mb-2">
+          • Our Result
+        </span>
+        <h2 class="main-heading mb-3">Before & after: witness the power of <br class="d-none d-md-inline">dermatology</h2>
+        <p class="description mx-auto">
+          See the remarkable transformations for yourself—our 'Before & After' gallery highlights the powerful impact of dermatological treatments.
+        </p>
+      </div>
+
+      <div class="row g-4 justify-content-center mb-5">
+        
+        <div class="col-md-6 col-lg-5" data-aos="fade-up" data-aos-delay="0">
+          <div class="comparison-slider shadow-sm">
+            <div class="img background-img" style="background-image: url('after1.png');"></div>
+            
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-5" data-aos="fade-up" data-aos-delay="150">
+          <div class="comparison-slider shadow-sm">
+            <div class="img background-img" style="background-image: url('after2.png');"></div>
+            
+          </div>
+        </div>
+
+      </div>
+
+      <div class="text-center mt-2">
+        <a href="gallery.html" class="btn btn-dark-green px-4 py-2-5 text-white">
+          View All Result <i class="fa-solid fa-arrow-right ms-2 btn-arrow"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+body {
+  font-family:'Open Sans', sans-serif;
+  background-color: #fdf8f5; /* Premium soft backdrop canvas background tint */
+  color: #333333;
+}
+
+/* Header Text styling rules */
+.sub-title {
+  font-size: 0.9rem;
+  color: #556b63;
+  letter-spacing: 0.5px;
+}
+
+.main-heading {
+ font-family:'Open Sans', sans-serif;
+  font-size: 2.75rem;
+  font-weight: 500;
+  color: #1a3026; /* Deep forest green signature tint */
+  line-height: 1.25;
+}
+
+.description {
+  color: #c0b2ab; /* Soft warm gray variant text styling */
+  font-size: 0.95rem;
+  max-width: 620px;
+  line-height: 1.5;
+}
+
+/* Master Core Slider Container Components */
+.comparison-slider {
+  position: relative;
+  width: 100%;
+  height: 380px;
+  overflow: hidden;
+  border-radius: 24px; /* Perfectly curves the cards corners structure */
+}
+
+.comparison-slider .img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Interactive Invisible Range Track Field Layer */
+.slider-bar {
+  position: absolute;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  outline: none;
+  margin: 0;
+  cursor: ew-resize;
+  z-index: 10;
+}
+
+/* Explicitly hides standard baseline track points across different web platforms */
+.slider-bar::-webkit-slider-thumb { -webkit-appearance: none; width: 4px; }
+.slider-bar::-moz-range-thumb { width: 4px; }
+
+/* Visual Center Line Split Bar Handle */
+.slider-button {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background-color: #ffffff;
+  pointer-events: none;
+  z-index: 5;
+  transform: translateX(-50%);
+}
+
+/* Dynamic White Interactive Pointer Ring */
+.slider-button::before {
+  content: "‹ ›";
+  font-family: sans-serif;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #1a3026;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 34px;
+  height: 34px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  padding-bottom: 2px;
+}
+
+/* Bottom Green Button Styles */
+.btn-dark-emerald {
+  background-color: #dc448d;
+  border: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 11px 28px;
+  transition: background-color 0.2s ease;
+}
+.btn-dark-emerald:hover {
+  background-color:#0ca7a1;
+}
+
+.btn-arrow {
+  font-size: 0.8rem;
+}
+
+@media (max-width: 767.98px) {
+  .main-heading { font-size: 2rem; }
+  .comparison-slider { height: 280px; }
+}
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+  const sliders = document.querySelectorAll(".comparison-slider");
+
+  sliders.forEach((slider) => {
+    const rangeInput = slider.querySelector(".slider-bar");
+    const foregroundImg = slider.querySelector(".foreground-img");
+    const sliderBtn = slider.querySelector(".slider-button");
+
+    rangeInput.addEventListener("input", (e) => {
+      const sliderPos = e.target.value;
+
+      // Dynamically updates width parameters based on slider state position
+      foregroundImg.style.width = `${sliderPos}%`;
+      sliderBtn.style.left = `${sliderPos}%`;
+    });
+  });
+});
+  </script>
+  <section class="faq-section py-5">
+    <div class="container container-green-card shadow p-4 p-md-5 position-relative overflow-hidden">
+      
+      <div class="leaf-decor leaf-top-left d-none d-lg-block"></div>
+      <div class="leaf-decor leaf-bottom-right d-none d-lg-block"></div>
+
+      <div class="row g-5 align-items-center position-relative z-1">
+        
+        <div class="col-lg-5" data-aos="fade-right">
+          <span class="sub-title-light text-uppercase fw-semibold d-inline-block mb-3">
+            • Frequently Asked Questions
+          </span>
+          <h2 class="main-heading-light mb-4">Frequently asked question <br>find out more</h2>
+          <p class="description-light mb-5">
+            Have questions about our dermatology services? Our 'Frequently Asked Questions' section.
+          </p>
+         
+        </div>
+
+        <div class="col-lg-7" data-aos="fade-left">
+          <div class="accordion accordion-custom" id="faqAccordion">
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true">
+                  What types of treatments do you offer?
+                </button>
+              </h2>
+              <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  We offer a wide range of dermatology treatments, including acne care, psoriasis management, skin cancer screening, cosmetic procedures like Botox etc.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false">
+                  Do I need a consultation before getting treatment?
+                </button>
+              </h2>
+              <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Yes, a formal consultation ensures our board-certified dermatologists evaluate your skin type accurately and build a customized approach.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false">
+                  Are your treatments suitable for all skin types?
+                </button>
+              </h2>
+              <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Absolutely. We specialize in configuring treatment wavelengths and medical applications safe for diverse, sensitive, and varied skin profiles.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false">
+                  Do you offer cosmetic dermatology services?
+                </button>
+              </h2>
+              <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Yes, we offer targeted anti-aging solutions, volume restorers, laser resurfacing, and chemical micro-peels under clinical supervision.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false">
+                  What should I expect during my first visit?
+                </button>
+              </h2>
+              <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Your first visit comprises a thorough structural skin mapping session, full medical history overview, and an open roadmap analysis.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+body {
+  background-color: #fdf8f5;
+  font-family:'Open Sans', sans-serif;
+}
+
+/* Base Wrapper Card container */
+.container-green-card {
+  background-color:#0ca7a1; /* Core deep forest green matching previous frames */
+  border-radius: 32px;
+  color: #ffffff;
+}
+
+/* Typography styles */
+.sub-title-light {
+  font-size: 0.85rem;
+  color: #a4beab;
+  letter-spacing: 0.5px;
+}
+
+.main-heading-light {
+  font-family:'Open Sans', sans-serif;
+  font-size: 2.6rem;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+.description-light {
+  color: #cddbd1;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Pill White button configuration */
+.btn-pill-white {
+  background-color: #ffffff;
+  color: #1e4638 !important;
+  font-weight: 500;
+  font-size: 0.9rem;
+  border-radius: 30px;
+  border: 1px solid #ffffff;
+  transition: all 0.2s ease;
+}
+.btn-pill-white:hover {
+  background-color: transparent;
+  color: #ffffff !important;
+}
+
+/* Accordion Engine Clean Reset Styles */
+.accordion-custom .accordion-item {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.accordion-custom .accordion-button {
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 24px 0;
+  box-shadow: none;
+  border: none;
+}
+
+.accordion-custom .accordion-button::after {
+  /* Using standard system chevron indicator overrides */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-size: 1.2rem;
+  transition: transform 0.2s ease;
+}
+
+.accordion-custom .accordion-button:not(.collapsed) {
+  color: #ffffff;
+  border-bottom: none;
+}
+
+.accordion-custom .accordion-body {
+  padding: 0 0 24px 0;
+  color: #cddbd1;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Subtle corner line decorations graphics mapping */
+.leaf-decor {
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  opacity: 0.08;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='1'%3E%3Cpath d='M2 22C12 22 17 12 22 2M12 14c2-3 5-4 7-5M7 18c1-2 3-3 5-3'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.leaf-decor.leaf-top-left { top: 20px; left: 20px; }
+.leaf-decor.leaf-bottom-right { bottom: 20px; right: 20px; transform: rotate(180deg); }
+
+@media (max-width: 991.98px) {
+  .main-heading-light { font-size: 2rem; }
+  .accordion-custom .accordion-button { font-size: 1rem; }
+}
+  </style>
+
+  <section class="testimonials-section py-5 position-relative">
+    <!-- Optional Dotted World Map Watermark Background Layer -->
+    <div class="map-bg-watermark position-absolute top-50 start-50 translate-middle opacity-25"></div>
+
+    <div class="container position-relative z-1">
+      
+      <!-- Section Header -->
+      <div class="text-center mb-5 header-block" data-aos="fade-up">
+        <span class="sub-title text-uppercase fw-semibold d-inline-block mb-2">
+          • Testimonials
+        </span>
+        <h2 class="main-heading mb-3">Real patient stories that reflect <br class="d-none d-md-inline">exceptional skin care</h2>
+        <p class="description mx-auto">
+          Hear from our satisfied patients about their journey to healthier, glowing skin. <br class="d-none d-md-inline">Their stories reflect the care, expertise.
+        </p>
+      </div>
+
+      <!-- Testimonials Bootstrap Carousel Slider Wrapper -->
+      <div id="testimonialCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          
+          <!-- Slide Container 1 (Active) -->
+          <div class="carousel-item active">
+            <div class="row g-4 justify-content-center">
+              
+              <!-- Review Card A -->
+              <div class="col-md-6 col-lg-5">
+                <div class="testimonial-card p-4 p-md-5 position-relative shadow-sm d-flex flex-column h-100">
+                  <div class="quote-mark position-absolute"><i class="fa-solid fa-quote-left"></i></div>
+                  
+                  <div class="star-rating mb-3">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  
+                  <p class="review-text flex-grow-1 mb-4">
+                    "I consulted Dr. Pradnya Asutkar ma'am for pre-bridal beauty treatment and skin polishing for my wedding. I got excellent results with the treatment she suggested. She is very talented and skilled — the best dermatologist I've ever met. I highly recommend her. Thank you ma'am!"
+                  </p>
+                  
+                  <div class="user-profile d-flex align-items-center">
+                    <div>
+                      <h5 class="profile-name mb-0">Rashmi Sakharwade</h5>
+                      <span class="profile-role text-muted d-block">Pre-Bridal Beauty Treatment</span>
+                      <span class="profile-role text-muted fw-semibold">La Aesthetique, Besa</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Review Card B -->
+              <div class="col-md-6 col-lg-5">
+                <div class="testimonial-card p-4 p-md-5 position-relative shadow-sm d-flex flex-column h-100">
+                  <div class="quote-mark position-absolute"><i class="fa-solid fa-quote-left"></i></div>
+                  
+                  <div class="star-rating mb-3">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  
+                  <p class="review-text flex-grow-1 mb-4">
+                    "I got excellent results in hairfall treatment. I was also suffering from allergy for the last 5 years. Dr. Pradnya advised me blood tests and after following her advice and treatment, I am now free from allergy. She has great expertise in hair procedures and her counseling is very nice. I recommend everyone to visit her clinic."
+                  </p>
+                  
+                  <div class="user-profile d-flex align-items-center">
+                    <div>
+                      <h5 class="profile-name mb-0">Kiran Gokhale</h5>
+                      <span class="profile-role text-muted d-block">Hair Fall & Allergy Treatment</span>
+                      <span class="profile-role text-muted fw-semibold">La Aesthetique, Besa</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Slide Container 2 -->
+          <div class="carousel-item">
+            <div class="row g-4 justify-content-center">
+               <!-- Review Card A -->
+              <div class="col-md-6 col-lg-5">
+                <div class="testimonial-card p-4 p-md-5 position-relative shadow-sm d-flex flex-column h-100">
+                  <div class="quote-mark position-absolute"><i class="fa-solid fa-quote-left"></i></div>
+                  <div class="star-rating mb-3"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                  <p class="review-text flex-grow-1 mb-4">"I visited La Aesthetique for persistent acne and within a few weeks my skin improved drastically. Dr. Asutkar explained the root cause of my pimples instead of just prescribing creams. Clean clinic, professional staff, visible results. Thank you so much ma'am for making me feel confident!"</p>
+                  <div class="user-profile d-flex align-items-center">
+                    <div><h5 class="profile-name mb-0">Pragati Kul</h5><span class="profile-role text-muted d-block">Acne Treatment</span><span class="profile-role text-muted fw-semibold">La Aesthetique, Besa</span></div>
+                  </div>
+                </div>
+              </div>
+ <!-- Review Card B -->
+              <div class="col-md-6 col-lg-5">
+  <div class="testimonial-card p-4 p-md-5 position-relative shadow-sm d-flex flex-column h-100">
+    <div class="quote-mark position-absolute"><i class="fa-solid fa-quote-left"></i></div>
+    <div class="star-rating mb-3">
+      <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+    </div>
+    <p class="review-text flex-grow-1 mb-4">"Very good clinic to be recommended for any type of skin treatment. Dr Pradnya is very soft spoken and cooperative. ❤️"</p>
+    <div class="user-profile d-flex align-items-center">
+      <div>
+        <h5 class="profile-name mb-0">Satisfied Patient</h5>
+        <span class="profile-role text-muted d-block">General Recommendation</span>
+        <span class="profile-role text-muted fw-semibold">La Aesthetique, Besa</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+            </div>
+          </div>
+
+        </div>
+
+        
+      </div>
+
+      <hr class="divider-line my-5">
+
+      <!-- Trusted Brand Footer Logos Grid Row
+      <div class="row align-items-center justify-content-between logo-footer-row g-3">
+        <div class="col-12 col-md-3 text-center text-md-start">
+          <h6 class="brand-title-lbl m-0 text-uppercase">Trusted By Leading Brands <br>In The Industry</h6>
+        </div>
+        <div class="col-12 col-md-9">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-end gap-4 gap-lg-5 logo-strip">
+            <div class="brand-logo-wrap"><i class="fa-solid fa-leaf me-1"></i> Logoipsum</div>
+            <div class="brand-logo-wrap"><i class="fa-solid fa-wave-square me-1"></i> Logoipsum</div>
+            <div class="brand-logo-wrap"><i class="fa-solid fa-bolt me-1"></i> Logoipsum</div>
+            <div class="brand-logo-wrap"><i class="fa-solid fa-snowflake me-1"></i> Logoipsum</div>
+            <div class="brand-logo-wrap"><i class="fa-solid fa-droplet me-1"></i> Logoipsum</div>
+          </div>
+        </div>
+      </div> -->
+
+    </div>
+  </section>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+body {
+   font-family:'Open Sans', sans-serif;
+  background-color: #fdf8f5; /* Uniform premium landing page tint background */
+  color: #333333;
+}
+
+/* Header Text Styles */
+.sub-title {
+  font-size: 0.9rem;
+  color: #556b63;
+  letter-spacing: 0.5px;
+}
+
+.main-heading {
+  font-family:'Open Sans', sans-serif;
+  font-size: 2.75rem;
+  font-weight: 500;
+  color: #1a3026; /* Signature deep emerald slate */
+  line-height: 1.25;
+}
+
+.description {
+  color: #707774;
+  font-size: 0.95rem;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+/* Cards Design Architecture */
+.testimonial-card {
+  background-color: #fcf6f2; /* Subtle contrast variation for cards box base */
+  border: 1px solid rgba(244, 230, 222, 0.5);
+  border-radius: 28px; /* Matching structural rounding rules from previous sections */
+  transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Elegant Absolute Quote Layout Positioning */
+.quote-mark {
+  left: 28px;
+  top: 28px;
+  font-size: 2.2rem;
+  color: #dc448d;
+  opacity: 1;
+}
+
+.star-rating {
+  color: #dc448d; /* Deep dark green filled rating stars */
+  font-size: 0.9rem;
+  margin-left: auto; /* Aligns content smoothly next to quote spacing */
+}
+
+.review-text {
+  font-size: 0.95rem;
+  color: #555c58;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+/* Profiles Frame Block elements */
+.profile-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-name {
+   font-family:'Open Sans', sans-serif;
+  color: #1a3026;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.profile-role {
+  font-size: 0.8rem;
+  letter-spacing: 0.3px;
+}
+
+/* Custom Dots Slide Indicators Configuration overrides default bootstrap styles */
+.carousel-indicators-custom button {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: none;
+  background-color: #d1c4bc;
+  padding: 0;
+  transition: all 0.2s ease;
+}
+
+.carousel-indicators-custom button.active {
+  background-color: #1a3026;
+  width: 20px;
+  border-radius: 4px;
+}
+
+/* Divider rules spacing layout elements */
+.divider-line {
+  border-color: #e2d7d0;
+  opacity: 0.6;
+}
+
+/* Footer Industry Brands layout rules */
+.brand-title-lbl {
+   font-family:'Open Sans', sans-serif;
+  color: #1a3026;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  line-height: 1.4;
+}
+
+.brand-logo-wrap {
+   font-family:'Open Sans', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #1a3026;
+  display: flex;
+  align-items: center;
+  opacity: 0.85;
+}
+
+/* Fake dotted world map watermarking fallback using background styling tools */
+.map-bg-watermark {
+  width: 100%;
+  max-width: 900px;
+  height: 350px;
+  pointer-events: none;
+  background-image: radial-gradient(circle, #e6dad2 1.5px, transparent 1.5px);
+  background-size: 24px 24px;
+  mask-image: radial-gradient(circle at center, black, transparent 75%);
+  -webkit-mask-image: radial-gradient(circle at center, black, transparent 75%);
+}
+
+@media (max-width: 767.98px) {
+  .main-heading { font-size: 2rem; }
+  .logo-strip { gap: 1.5rem !important; }
+}
+  </style>
+ <!-- <section class="team-section py-5 position-relative">
+    <div class="leaf-accent top-right d-none d-md-block"></div>
+    <div class="leaf-accent bottom-left d-none d-md-block"></div>
+
+    <div class="container text-center">
+      
+      <div class="mb-5 header-block" data-aos="fade-up">
+        <span class="sub-title text-uppercase fw-semibold d-inline-block mb-2">
+          • Our Expert Team
+        </span>
+        <h2 class="main-heading mb-3">Our expert team: committed to your <br class="d-none d-md-inline">skin health and beauty</h2>
+        <p class="description mx-auto">
+          Our team of dermatology professionals is dedicated to providing you with <br class="d-none d-md-inline">the highest quality care. With years of experience.
+        </p>
+      </div>
+
+      <div class="row g-4 justify-content-center">
+        
+        <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="0">
+          <div class="team-card position-relative overflow-hidden shadow-sm">
+            <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=400" alt="Dr. Kathryn Murphy" class="team-img">
+            <div class="card-overlay d-flex flex-column justify-content-end p-3 pb-4">
+              <h4 class="member-name mb-1">Dr. Kathryn Murphy</h4>
+              <span class="member-role">Anesthesiology</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+          <div class="team-card position-relative overflow-hidden shadow-sm">
+            <img src="https://images.unsplash.com/photo-1594824813573-246434e3b96f?auto=format&fit=crop&q=80&w=400" alt="Dr. Kristin Watson" class="team-img">
+            <div class="card-overlay d-flex flex-column justify-content-end p-3 pb-4">
+              <h4 class="member-name mb-1">Dr. Kristin Watson</h4>
+              <span class="member-role">Infectious Disease</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+          <div class="team-card position-relative overflow-hidden shadow-sm">
+            <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&q=80&w=400" alt="Dr. Arlene Mccoy" class="team-img">
+            <div class="card-overlay d-flex flex-column justify-content-end p-3 pb-4">
+              <h4 class="member-name mb-1">Dr. Arlene Mccoy</h4>
+              <span class="member-role">Cardiology</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+          <div class="team-card position-relative overflow-hidden shadow-sm">
+            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&q=80&w=400" alt="Dr. Jenny Wilson" class="team-img">
+            <div class="card-overlay d-flex flex-column justify-content-end p-3 pb-4">
+              <h4 class="member-name mb-1">Dr. Jenny Wilson</h4>
+              <span class="member-role">Anesthesiology</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: #fdf8f5; /* Matches layout canvas tone */
+  color: #333333;
+}
+
+/* Header Text Theme */
+.sub-title {
+  font-size: 0.9rem;
+  color: #556b63;
+  letter-spacing: 0.5px;
+}
+
+.main-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.75rem;
+  font-weight: 500;
+  color: #1a3026; /* Deep signature forest slate */
+  line-height: 1.25;
+}
+
+.description {
+  color: #707774;
+  font-size: 0.95rem;
+  max-width: 650px;
+  line-height: 1.6;
+}
+
+/* Card Framing Architecture */
+.team-card {
+  height: 380px;
+  border-radius: 24px; /* Matches your rounded container system */
+  background: linear-gradient(to bottom, #dbe6e0, #c4d4cc); /* Soft backdrop fallback colors */
+  transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+}
+
+.team-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Gradient text frame at the bottom of the portrait card */
+.card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(to top, rgba(16, 44, 34, 0.95) 0%, rgba(16, 44, 34, 0.5) 60%, transparent 100%);
+  color: #ffffff;
+  text-align: center;
+}
+
+.member-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.15rem;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+.member-role {
+  font-size: 0.8rem;
+  opacity: 0.85;
+  letter-spacing: 0.5px;
+}
+
+/* Optional line-art background corners injection code */
+.leaf-accent {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  opacity: 0.12;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231a3026' stroke-width='1'%3E%3Cpath d='M2 22C12 22 17 12 22 2M12 14c2-3 5-4 7-5M7 18c1-2 3-3 5-3'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.leaf-accent.top-right { top: 40px; right: 40px; transform: scaleX(-1); }
+.leaf-accent.bottom-left { bottom: 40px; left: 40px; transform: scaleY(-1); }
+
+/* Responsive break controls */
+@media (max-width: 767.98px) {
+  .main-heading { font-size: 2rem; }
+  .team-card { height: 340px; }
+}
+  </style>-->
+<!--  <section class="blog-section py-5">
+    <div class="container">
+      
+      <div class="text-center mb-5 header-block" data-aos="fade-up">
+        <span class="sub-title text-uppercase fw-semibold d-inline-block mb-2">
+          • Latest Blog
+        </span>
+        <h2 class="main-heading mb-3">New insights: read our latest posts for <br class="d-none d-md-inline">skin care tips</h2>
+        <p class="description mx-auto">
+          Read our latest posts for fresh insights on skin care. Our articles cover <br class="d-none d-md-inline">everything from common dermatological concerns.
+        </p>
+      </div>
+
+      <div class="row g-4 justify-content-center">
+        
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+          <div class="blog-card d-flex flex-column h-100">
+            <div class="img-frame overflow-hidden mb-3">
+              <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&q=80&w=500" alt="Botox Care treatment thumbnail" class="card-img-top-custom">
+            </div>
+            <div class="card-body-custom d-flex flex-column flex-grow-1">
+              <h4 class="post-title mb-3">How to Care for Your Skin After a Botox Treatment</h4>
+              <a href="#" class="read-more-link mt-auto text-decoration-none fw-semibold">
+                Read More <i class="fa-solid fa-arrow-right ms-1 align-middle small"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="blog-card d-flex flex-column h-100">
+            <div class="img-frame overflow-hidden mb-3">
+              <img src="https://images.unsplash.com/photo-1556228852-80b6e487c6bc?auto=format&fit=crop&q=80&w=500" alt="Acne Treatment thumbnail" class="card-img-top-custom">
+            </div>
+            <div class="card-body-custom d-flex flex-column flex-grow-1">
+              <h4 class="post-title mb-3">Understanding the Causes of Acne and How to Treat It</h4>
+              <a href="#" class="read-more-link mt-auto text-decoration-none fw-semibold">
+                Read More <i class="fa-solid fa-arrow-right ms-1 align-middle small"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="blog-card d-flex flex-column h-100">
+            <div class="img-frame overflow-hidden mb-3">
+              <img src="https://images.unsplash.com/photo-1643297654416-05795d62e39c?auto=format&fit=crop&q=80&w=500" alt="Skin cancer prevention treatment thumbnail" class="card-img-top-custom">
+            </div>
+            <div class="card-body-custom d-flex flex-column flex-grow-1">
+              <h4 class="post-title mb-3">Why Regular Skin Cancer Screenings Are Important</h4>
+              <a href="#" class="read-more-link mt-auto text-decoration-none fw-semibold">
+                Read More <i class="fa-solid fa-arrow-right ms-1 align-middle small"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+body {
+  background-color: #fdf8f5;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: #333333;
+}
+
+/* Editorial header style sheets */
+.sub-title {
+  font-size: 0.9rem;
+  color: #556b63;
+  letter-spacing: 0.5px;
+}
+
+.main-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.75rem;
+  font-weight: 500;
+  color: #1a3026; /* Deep slate slate tone theme */
+  line-height: 1.25;
+}
+
+.description {
+  color: #707774;
+  font-size: 0.95rem;
+  max-width: 620px;
+  line-height: 1.6;
+}
+
+/* Card layout rules configuration */
+.blog-card {
+  background: transparent;
+  border: none;
+}
+
+.img-frame {
+  height: 320px;
+  border-radius: 24px; /* Heavy matching corner radii */
+}
+
+.card-img-top-custom {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.blog-card:hover .card-img-top-custom {
+  transform: scale(1.04);
+}
+
+/* Inside text formatting elements */
+.post-title {
+  font-family: 'Playfair Display', serif;
+  color: #1a3026;
+  font-weight: 600;
+  font-size: 1.3rem;
+  line-height: 1.4;
+}
+
+.read-more-link {
+  color: #1a3026;
+  font-size: 0.9rem;
+  letter-spacing: 0.3px;
+  border-bottom: 1px solid transparent;
+  display: inline-block;
+  align-self: flex-start;
+  transition: opacity 0.2s ease;
+}
+
+.read-more-link:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 767.98px) {
+  .main-heading { font-size: 2rem; }
+  .img-frame { height: 260px; }
+}
+  </style>-->
+  <section class="appointment-section py-5">
+    <div class="container container-custom-form p-4 p-md-5 position-relative overflow-hidden">
+      
+      <div class="form-decor-leaf top-right-leaf d-none d-lg-block"></div>
+      <div class="form-decor-leaf bottom-left-leaf d-none d-lg-block"></div>
+
+      <div class="row g-5 align-items-stretch position-relative z-1">
+        
+        <div class="col-lg-5 d-flex flex-column justify-content-between" data-aos="fade-right">
+          
+          <div class="row g-3 mb-4">
+            <div class="col-sm-6">
+              <div class="info-badge-card d-flex align-items-center p-3">
+                <div class="badge-icon-wrap d-flex align-items-center justify-content-center me-3">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div>
+                  <p class="badge-text m-0">La Aesthetique, Skin, Hair &<br>Laser Clinic, Nagpur, Maharashtra</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="info-badge-card d-flex align-items-center p-3">
+                <div class="badge-icon-wrap d-flex align-items-center justify-content-center me-3">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div>
+                  <p class="badge-text m-0"> +91 84593 23304</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="map-wrapper flex-grow-1 overflow-hidden shadow-sm position-relative">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3722.6652623356986!2d79.0926375!3d21.086027599999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4bf795f8591d9%3A0xf4e81e61d5ae78d3!2sLa%20Aesthetique%20(Skin%20Hair%20Laser%20Clinic)!5e0!3m2!1sen!2sin!4v1781521925807!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+
+        <div class="col-lg-7" data-aos="fade-left">
+          <div class="form-header-block mb-4">
+            <span class="sub-title text-uppercase fw-semibold d-inline-block mb-2">
+              • Book A Appointment
+            </span>
+            <h2 class="main-heading mb-3">Reach out to us today!</h2>
+            <p class="description">
+              It's time to take control of your skin health! Booking your appointment is easy and fast. Choose a time that works for you and our dermatology experts will be ready.
+            </p>
+          </div>
+
+          <form action="#" method="POST" class="row g-3">
+            
+            <div class="col-md-6">
+              <input type="text" class="form-control custom-input" placeholder="Full Name Here" required>
+            </div>
+            
+            <div class="col-md-6">
+              <input type="tel" class="form-control custom-input" placeholder="Phone Number" required>
+            </div>
+            
+            <div class="col-md-6">
+              <input type="email" class="form-control custom-input" placeholder="Email Address" required>
+            </div>
+            
+            <div class="col-md-6">
+              <select class="form-select custom-input text-muted" required>
+                <option value="" disabled selected>select service</option>
+                <option value="medical">Medical Dermatology</option>
+                <option value="cosmetic">Cosmetic Enhancements</option>
+                <option value="laser">Laser Treatments</option>
+              </select>
+            </div>
+            
+            <div class="col-md-6">
+              <input type="date" class="form-control custom-input text-muted" required>
+            </div>
+            
+            <div class="col-md-6">
+              <input type="time" class="form-control custom-input text-muted" required>
+            </div>
+            
+            <div class="col-12">
+              <textarea class="form-control custom-input" rows="4" placeholder="Description here about service or your problem..." required></textarea>
+            </div>
+            
+           <div class="col-12 mt-4">
+    <a href="https://wa.me/918459323304?text=Hello,%20I%20am%20interested%20in%20your%20services!" target="_blank" class="btn btn-dark-emerald px-4 py-2.5 text-white">
+    Send Message <i class="fa-solid fa-arrow-right ms-2 small-arrow"></i>
+</a>
+</div>
+              
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+body {
+   font-family:'Open Sans', sans-serif;
+  background-color: #fdf8f5;
+}
+
+/* Master Form Canvas Container Wrapper */
+.container-custom-form {
+  background-color: #fcf6f2; /* Smooth warm pale white/pink canvas background tone */
+  border-radius: 28px;
+  max-width: 1200px;
+}
+
+/* --- Left Column Elements --- */
+.info-badge-card {
+  background-color: #f5eae2; /* Darker sand tint backdrop wrapper */
+  border-radius: 16px;
+  height: 100%;
+}
+
+.badge-icon-wrap {
+  width: 44px;
+  height: 44px;
+  background-color: #dc448d; /* Signature deep forest green bubble */
+  color: #ffffff;
+  font-size: 1rem;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.badge-text {
+  font-size: 0.85rem;
+  color: #4a524e;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.map-wrapper {
+  border-radius: 20px;
+  min-height: 320px;
+}
+
+/* --- Right Column Form Typography --- */
+.sub-title {
+  font-size: 0.85rem;
+  color: #556b63;
+  letter-spacing: 0.5px;
+}
+
+.main-heading {
+   font-family:'Open Sans', sans-serif;
+  font-size: 2.6rem;
+  font-weight: 500;
+  color: #1a3026;
+  line-height: 1.2;
+}
+
+.description {
+  color: #707774;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* --- Styled Form Input Custom Overrides --- */
+.custom-input {
+  background-color: #ffffff !important;
+  border: 1px solid rgba(26, 48, 38, 0.08) !important;
+  border-radius: 14px !important;
+  padding: 12px 16px !important;
+  font-size: 0.9rem !important;
+  color: #333333 !important;
+  box-shadow: none !important;
+  transition: border-color 0.2s ease !important;
+}
+
+.custom-input::placeholder {
+  color: #a4aba7 !important;
+  opacity: 1;
+}
+
+.custom-input:focus {
+  border-color: #1a3026 !important;
+}
+
+/* Dropdown select, date & time field customization */
+select.custom-input, input[type="date"].custom-input, input[type="time"].custom-input {
+  color: #6c757d !important;
+}
+
+textarea.custom-input {
+  resize: none;
+}
+
+/* --- Call To Action Button --- */
+.btn-dark-emerald {
+  background-color: #dc448d;
+  border: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 11px 28px;
+  transition: background-color 0.2s ease;
+}
+.btn-dark-emerald:hover {
+  background-color:#0ca7a1;
+}
+
+.small-arrow {
+  font-size: 0.8rem;
+}
+
+/* --- Background Line Art Flora Ornaments --- */
+.form-decor-leaf {
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  opacity: 0.12;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231a3026' stroke-width='1'%3E%3Cpath d='M2 22C12 22 17 12 22 2M12 14c2-3 5-4 7-5M7 18c1-2 3-3 5-3'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.form-decor-leaf.top-right-leaf { top: 20px; right: 20px; }
+.form-decor-leaf.bottom-left-leaf { bottom: 20px; left: 20px; transform: rotate(180deg); }
+
+/* --- Responsive Adaptability Controls --- */
+@media (max-width: 991.98px) {
+  .main-heading {
+    font-size: 2.1rem;
+  }
+  .map-wrapper {
+    height: 300px;
+    min-height: auto;
+  }
+}
+  </style>
+   <footer class="footer-section py-5">
+    <div class="container container-dark-footer shadow p-4 p-md-5 position-relative overflow-hidden">
+      
+      <div class="footer-decor-branch bottom-left-branch d-none d-lg-block"></div>
+      <div class="footer-decor-branch top-right-branch d-none d-lg-block"></div>
+
+      <div class="row g-4 position-relative z-1 mb-5">
+        
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-brand-wrap d-flex align-items-center mb-3">
+            <img src="logo.png" alt="La Aesthetique - Skin, Hair & Laser" style="height: 50px;">
+          </div>
+          <p class="brand-tagline mb-4">
+            La Aesthetique combines advanced dermatology, hair restoration and laser technology with a personal touch for healthy, confident skin.
+          </p>
+          <form action="#" method="POST" class="newsletter-form-group d-flex align-items-center p-1 bg-white">
+            <input type="email" class="form-control border-0 px-3" placeholder="Enter your email" required aria-label="Email address for newsletter">
+            <button type="submit" class="btn btn-newsletter-submit d-flex align-items-center justify-content-center" aria-label="Subscribe">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </form>
+        </div>
+
+        <div class="col-lg-3 col-md-6 ps-lg-4">
+          <h5 class="column-heading mb-4">Contact Us</h5>
+          <div class="d-flex flex-column gap-3">
+            
+            <div class="contact-badge-item d-flex align-items-center">
+              <div class="contact-icon-sphere d-flex align-items-center justify-content-center me-3">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div>
+                <span class="badge-label d-block text-uppercase">For more information</span>
+                <span class="badge-data"> +91 84593 23304</span>
+              </div>
+            </div>
+
+           
+
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h5 class="column-heading mb-4">Get In Touch</h5>
+          
+          <div class="mb-4">
+            <span class="touch-label d-block mb-1">Location</span>
+            <p class="touch-data m-0">La Aesthetique, Skin, Hair &<br>Laser Clinic, Nagpur, Maharashtra</p>
+          </div>
+
+          <div>
+            <span class="touch-label d-block mb-1">Email</span>
+            <a href="mailto:info@laaesthetique.com" class="touch-data text-decoration-none">info@laaesthetique.com</a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6">
+          <h5 class="column-heading mb-4">Quick Link</h5>
+          <ul class="list-unstyled footer-links-list d-flex flex-column gap-2 m-0">
+            <li><a href="index.html" class="text-decoration-none">Home</a></li>
+            <li><a href="about.html" class="text-decoration-none">About Us</a></li>
+            <li><a href="service.html" class="text-decoration-none">Our Services</a></li>
+            <li><a href="#" class="text-decoration-none">Client Reviews</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <hr class="footer-divider-line mb-4">
+
+      <div class="row align-items-center justify-content-between g-3 position-relative z-1">
+        <div class="col-md-6 text-center text-md-start">
+          <p class="copyright-txt m-0">Copyright © 2026 All Rights Reserved.</p>
+        </div>
+        <div class="col-md-6">
+          <div class="d-flex align-items-center justify-content-center justify-content-md-end gap-3 social-wrap">
+            <span class="social-label text-uppercase fw-semibold me-2">Follow Us On Social</span>
+            <a href="#" class="social-icon-box d-flex align-items-center justify-content-center text-decoration-none" aria-label="Website"><i class="fa-solid fa-globe"></i></a>
+            <a href="#" class="social-icon-box d-flex align-items-center justify-content-center text-decoration-none" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-icon-box d-flex align-items-center justify-content-center text-decoration-none" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+body {
+  font-family:'Open Sans', sans-serif;
+  background-color: #fdf8f5;
+}
+
+/* Master Dark Green Container Panel */
+.container-dark-footer {
+  background-color: #0ca7a1; /* Signature teal canvas */
+  border-radius: 32px;
+  color: #ffffff;
+}
+
+/* Column Title Typography */
+.column-heading {
+ font-family:'Open Sans', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+/* --- Column 1 components --- */
+.brand-logo-icon {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.brand-logo-text {
+  font-family:'Open Sans', sans-serif;
+  font-size: 1.65rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.brand-tagline {
+  font-size: 0.9rem;
+  color: #cddbd1;
+  line-height: 1.5;
+}
+
+/* Newsletter capsule box fields */
+.newsletter-form-group {
+  border-radius: 14px;
+  width: 100%;
+  max-width: 320px;
+}
+
+.newsletter-form-group input {
+  font-size: 0.85rem;
+  color: #333333;
+  box-shadow: none !important;
+}
+
+.btn-newsletter-submit {
+  background-color: #dc448d;
+  color: #ffffff;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease;
+}
+
+.btn-newsletter-submit:hover {
+  background-color: #274738;
+}
+
+/* --- Column 2: White Contact Badges Components --- */
+.contact-icon-sphere {
+  width: 44px;
+  height: 44px;
+  background-color: #ffffff;
+  color: #dc448d;
+  border-radius: 12px; /* Smooth card look matching brand design pattern */
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.badge-label {
+  font-size: 0.72rem;
+  color: #a4beab;
+  letter-spacing: 0.3px;
+}
+
+.badge-data {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+/* --- Column 3 components --- */
+.touch-label {
+  font-family:'Open Sans', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.touch-data {
+  font-size: 0.9rem;
+  color: #cddbd1;
+  line-height: 1.4;
+}
+
+/* --- Column 4: Quick Links List --- */
+.footer-links-list a {
+  color: #cddbd1;
+  font-size: 0.9rem;
+  transition: color 0.2s ease, padding-left 0.2s ease;
+}
+
+.footer-links-list a:hover {
+  color: #ffffff;
+  padding-left: 2px;
+}
+
+/* --- Bottom Baseline Area --- */
+.footer-divider-line {
+  border-color: rgba(255, 255, 255, 0.12);
+  margin: 0;
+}
+
+.copyright-txt {
+  font-size: 0.85rem;
+  color: #a4beab;
+}
+
+.social-label {
+  font-size: 0.78rem;
+  color: #a4beab;
+  letter-spacing: 0.5px;
+}
+
+/* Social White Rounded Click boxes */
+.social-icon-box {
+  background-color: #ffffff;
+  color: #dc448d;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.social-icon-box:hover {
+  transform: translateY(-2px);
+  background-color: #a4beab;
+  color: #1a3026;
+}
+
+/* --- Line Art Foliage Accents Coordinates --- */
+.footer-decor-branch {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  opacity: 0.06;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='1'%3E%3Cpath d='M2 22C12 22 17 12 22 2M12 14c2-3 5-4 7-5M7 18c1-2 3-3 5-3'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.footer-decor-branch.bottom-left-branch { bottom: 10px; left: 10px; }
+.footer-decor-branch.top-right-branch { top: 10px; right: 10px; transform: rotate(180deg); }
+
+/* --- Responsiveness Media Tweaks --- */
+@media (max-width: 991.98px) {
+  .newsletter-form-group { max-width: 100%; }
+  .social-wrap { justify-content: center !important; }
+}
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      easing: 'ease-out-cubic',
+      once: true,
+      offset: 80
+    });
+  </script>
+</body>
+</html>

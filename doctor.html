@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. Pradnya Asutkar - MBBS, MD | La Aesthetique Skin, Hair & Laser Clinic, Nagpur</title>
+  <meta name="description" content="Meet Dr. Pradnya Asutkar, MBBS, MD – Dermatologist & Aesthetic Physician at La Aesthetique, Nagpur. Specializes in skin, hair, laser & aesthetic medicine.">
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+  <style>
+    /* ======= BASE ======= */
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: #fdf8f5;
+      color: #333;
+    }
+
+    /* ======= NAVBAR ======= */
+    .navbar .nav-link { font-weight: 500; color: #1a3026; }
+    .navbar .nav-link:hover, .navbar .nav-link.active { color: #0ca7a1; }
+   .btn-dark-emerald {
+    background: #dc448d;
+    border: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 11px 28px;
+    transition: background-color 0.2s ease;
+}
+
+.btn-dark-emerald:hover {
+    background: #264537;
+}
+
+    /* ======= INNER BANNER ======= */
+    .banner-green-card {
+      background: #0ca7a1;
+      border-radius: 24px;
+    }
+    .banner-title {
+      font-size: 2.5rem;
+      font-weight: 500;
+    }
+    .banner-decor {
+      position: absolute; width: 120px; height: 120px; opacity: .06;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='1'%3E%3Cpath d='M2 22C12 22 17 12 22 2M12 14c2-3 5-4 7-5M7 18c1-2 3-3 5-3'/%3E%3C/svg%3E");
+      background-size: contain; background-repeat: no-repeat;
+    }
+    .banner-decor.left-decor  { top: 10px; left: 10px; }
+    .banner-decor.right-decor { bottom: 10px; right: 10px; transform: rotate(180deg); }
+    .breadcrumb-item + .breadcrumb-item::before { color: rgba(255,255,255,.4); }
+
+    /* ======= TYPOGRAPHY ======= */
+    .main-heading    { font-size: 2.5rem; font-weight: 500; color: #1a3026; }
+    .split-subheading{ font-size: 1.8rem; font-weight: 500; color: #1a3026; }
+    .section-label   { font-size: 0.78rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #dc448d; }
+    .description     { font-size: 0.95rem; line-height: 1.7; }
+
+    /* ======= LAYER 1: HERO ======= */
+    .doctor-portrait-frame {
+      width: 100%; max-width: 380px; height: 460px;
+      border-radius: 24px; background: #e4ece8; overflow: hidden;
+    }
+    .sync-crop-img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+    /* Qualification pill badges */
+    .qual-pill {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: #fff; border: 1.5px solid rgba(12,167,161,.25);
+      border-radius: 50px; padding: 6px 16px;
+      font-size: 0.8rem; font-weight: 600; color: #0ca7a1;
+    }
+    .qual-pill i { color: #dc448d; }
+
+    /* Meta badges grid */
+    .meta-badge-card {
+      background: #f7f3f0; border-radius: 12px;
+      border: 1px solid rgba(26,48,38,.04);
+    }
+    .meta-icon-wrap {
+      width: 40px; height: 40px; background: #dc448d;
+      color: #fff; border-radius: 8px; font-size: .95rem; flex-shrink: 0;
+    }
+    .meta-lbl { font-size: .72rem; letter-spacing: .3px; }
+    .meta-val { font-size: .88rem; color: #1a3026; }
+
+    /* Social strip */
+    .social-strip-wrap { background: #f7f3f0; }
+    .social-links a { color: #dc448d; font-size: .95rem; transition: opacity .2s; }
+    .social-links a:hover { opacity: .6; }
+
+    /* ======= LAYER 2: EXPERTISE & SKILLS ======= */
+    .clinical-check-list li i  { color: #dc448d; font-size: 1.05rem; }
+    .clinical-check-list li span{ font-size: .9rem; }
+
+    .skill-name  { font-size: 1.05rem; font-weight: 600; color: #1a3026; }
+    .skill-value { font-size: .85rem; font-weight: 600; color: #555c58; }
+    .custom-track-base { height: 10px !important; background: #e9e2de !important; border-radius: 5px !important; }
+    .custom-fill { background: #dc448d !important; border-radius: 5px !important; }
+
+    /* ======= LAYER 3: EDUCATION TIMELINE ======= */
+    .edu-timeline { position: relative; padding-left: 28px; }
+    .edu-timeline::before {
+      content: ''; position: absolute; left: 10px; top: 4px; bottom: 4px;
+      width: 2px; background: linear-gradient(to bottom, #0ca7a1, #dc448d);
+      border-radius: 2px;
+    }
+    .edu-item { position: relative; margin-bottom: 28px; }
+    .edu-item:last-child { margin-bottom: 0; }
+    .edu-dot {
+      position: absolute; left: -22px; top: 5px;
+      width: 14px; height: 14px; border-radius: 50%;
+      background: #dc448d; border: 2px solid #fff;
+      box-shadow: 0 0 0 2px #dc448d;
+    }
+    .edu-year {
+      display: inline-block; font-size: .72rem; font-weight: 700;
+      letter-spacing: 1px; color: #fff; background: #0ca7a1;
+      border-radius: 20px; padding: 2px 10px; margin-bottom: 4px;
+    }
+    .edu-degree  { font-size: 1rem; font-weight: 600; color: #1a3026; margin: 0; }
+    .edu-college { font-size: .85rem; color: #6c757d; margin: 0; }
+
+    /* ======= LAYER 4: SPECIALIZATIONS CARDS ======= */
+    .spec-card {
+      background: #fff; border-radius: 16px; padding: 24px 20px;
+      border: 1px solid rgba(12,167,161,.1);
+      transition: transform .25s ease, box-shadow .25s ease;
+      height: 100%;
+    }
+    .spec-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(12,167,161,.12); }
+    .spec-icon-wrap {
+      width: 52px; height: 52px; background: linear-gradient(135deg, #0ca7a1, #09908b);
+      color: #fff; border-radius: 14px; font-size: 1.25rem;
+      display: flex; align-items: center; justify-content: center; margin-bottom: 14px;
+    }
+    .spec-title { font-size: .95rem; font-weight: 600; color: #1a3026; margin-bottom: 6px; }
+    .spec-desc  { font-size: .82rem; color: #6c757d; line-height: 1.5; margin: 0; }
+
+    /* ======= LAYER 5: APPOINTMENT FORM ======= */
+    .appointment-outer-card { background: #fcf6f2; border-radius: 28px; }
+    .form-side-img-wrap { border-radius: 20px; height: 360px !important; overflow: hidden; }
+    .img-form-side { object-position: center; transform: scale(1.05); }
+    .hours-pane {
+      background: linear-gradient(to top, rgba(12,167,161,.98) 0%, rgba(12,167,161,.5) 70%, transparent 100%);
+      border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;
+    }
+    .hours-icon-box {
+      width: 42px; height: 42px; background: #dc448d;
+      color: #fff; border-radius: 10px; font-size: 1.1rem;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .hours-title   { font-size: 1.1rem; font-weight: 600; }
+    .form-title-heading { font-size: 2rem; font-weight: 500; color: #1a3026; }
+    .custom-input {
+      background: #fff !important; border: 1px solid rgba(26,48,38,.08) !important;
+      border-radius: 10px !important; padding: 11px 16px !important;
+      font-size: .88rem !important; box-shadow: none !important;
+    }
+    .custom-input::placeholder { color: #9ba39f !important; }
+    .custom-input:focus { border-color: #0ca7a1 !important; }
+    textarea.custom-input { resize: none; }
+
+    .btn-pink { background: #dc448d; border: none; font-size: .9rem; font-weight: 500; padding: 11px 28px; color: #fff; transition: background .2s; border-radius: 8px; }
+    .btn-pink:hover { background: #0ca7a1; color: #fff; }
+
+    /* ======= RESPONSIVE ======= */
+    @media (max-width: 991.98px) {
+      .main-heading      { font-size: 2rem; }
+      .split-subheading  { font-size: 1.5rem; }
+      .form-title-heading{ font-size: 1.7rem; }
+      .doctor-portrait-frame { height: 360px; max-width: 100%; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar navbar-expand-lg py-3 bg-transparent">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="logo1.png" alt="La Aesthetique" style="height:55px;">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link active" href="doctor.html">Doctor</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <a href="contact.html" class="btn btn-dark-emerald rounded-pill px-4 btn-sm text-white">
+    Book Appointment
+    <i class="fa-solid fa-arrow-right ms-1 small"></i>
+</a>
+  </div>
+</nav>
+
+<!-- ===== INNER BANNER ===== -->
+<header class="py-3">
+  <div class="container">
+    <div class="banner-green-card text-center text-white p-5 position-relative overflow-hidden">
+      <div class="banner-decor left-decor"></div>
+      <div class="banner-decor right-decor"></div>
+      <div class="position-relative z-1 py-4">
+        <h1 class="banner-title mb-2">Meet Our Doctor</h1>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb justify-content-center m-0">
+            <li class="breadcrumb-item"><a href="index.html" class="text-white text-opacity-75 text-decoration-none">Home</a></li>
+            <li class="breadcrumb-item text-white active" aria-current="page">Doctor</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ===== MAIN CONTENT ===== -->
+<main class="py-5">
+  <div class="container my-4">
+
+    <!-- ─── LAYER 1: HERO BIO ─── -->
+    <div class="row g-5 align-items-center mb-5 pb-3">
+
+      <!-- Portrait -->
+      <div class="col-md-5" data-aos="fade-right">
+        <div class="doctor-portrait-frame shadow-sm mx-auto">
+          <img src="https://dermatiqua.com/assets/doctor-w0eT4Z-G.jpg"
+               alt="Dr. Pradnya Asutkar – MBBS, MD Dermatologist, Nagpur"
+               class="sync-crop-img">
+        </div>
+      </div>
+
+      <!-- Bio text -->
+      <div class="col-md-7" data-aos="fade-left">
+        <span class="section-label">La Aesthetique, Nagpur</span>
+        <h2 class="main-heading mt-2 mb-1">Dr. Pradnya Asutkar</h2>
+
+        <!-- Qualification pills -->
+        <div class="d-flex flex-wrap gap-2 mb-3">
+          <span class="qual-pill"><i class="fa-solid fa-graduation-cap"></i> MBBS</span>
+          <span class="qual-pill"><i class="fa-solid fa-graduation-cap"></i> MD – Dermatology</span>
+          <span class="qual-pill"><i class="fa-solid fa-stethoscope"></i> Dermatologist & Aesthetic Physician</span>
+        </div>
+
+        <p class="description text-muted mb-3">
+          Dr. Pradnya Asutkar is a qualified Dermatologist and Aesthetic Physician holding an MBBS and MD in Dermatology. With over 12 years of dedicated experience, she specializes in diagnosing and treating a comprehensive range of skin and hair conditions — from acne and pigmentation to hair loss, laser-based treatments, and anti-ageing therapies.
+        </p>
+        <p class="description text-muted mb-4">
+          Her practice at La Aesthetique blends advanced clinical dermatology with state-of-the-art aesthetic technology, always guided by an honest, patient-first philosophy. Every treatment plan is tailored to the individual — designed to deliver safe, effective, and lasting results.
+        </p>
+
+        <!-- Meta badges 2×2 -->
+        <div class="row g-3 mb-4">
+          <div class="col-sm-6">
+            <div class="meta-badge-card d-flex align-items-center p-3">
+              <div class="meta-icon-wrap d-flex align-items-center justify-content-center me-3"><i class="fa-solid fa-user-doctor"></i></div>
+              <div>
+                <span class="meta-lbl d-block text-muted">Qualification</span>
+                <span class="meta-val fw-semibold">MBBS, MD – Dermatology</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="meta-badge-card d-flex align-items-center p-3">
+              <div class="meta-icon-wrap d-flex align-items-center justify-content-center me-3"><i class="fa-solid fa-id-badge"></i></div>
+              <div>
+                <span class="meta-lbl d-block text-muted">Experience</span>
+                <span class="meta-val fw-semibold">12+ Years</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="meta-badge-card d-flex align-items-center p-3">
+              <div class="meta-icon-wrap d-flex align-items-center justify-content-center me-3"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <span class="meta-lbl d-block text-muted">Email Address</span>
+                <span class="meta-val fw-semibold text-break">info@laaesthetique.com</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="meta-badge-card d-flex align-items-center p-3">
+              <div class="meta-icon-wrap d-flex align-items-center justify-content-center me-3"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <span class="meta-lbl d-block text-muted">Contact Number</span>
+                <span class="meta-val fw-semibold">+91 84593 23304</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Social strip -->
+        <div class="social-strip-wrap d-flex align-items-center p-3 rounded-3">
+          <span class="small text-muted fw-semibold me-3 text-uppercase">Follow Us:</span>
+          <div class="d-flex gap-3 social-links">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div><!-- /row layer 1 -->
+
+    <!-- ─── LAYER 2: EXPERTISE + SKILLS ─── -->
+    <div class="row g-5 align-items-start mb-5 pt-2">
+
+      <!-- Checklist -->
+      <div class="col-lg-6" data-aos="fade-right">
+        <span class="section-label">What Sets Her Apart</span>
+        <h3 class="split-subheading mt-2 mb-3">Know About Dr. Pradnya</h3>
+        <p class="description text-muted mb-4">
+          Dr. Pradnya Asutkar brings a rare combination of deep medical training and hands-on expertise in aesthetic medicine. Her commitment to evidence-based care ensures every patient receives the most effective, up-to-date treatment available.
+        </p>
+        <ul class="list-unstyled clinical-check-list d-flex flex-column gap-3">
+          <li class="d-flex align-items-start"><i class="fa-regular fa-square-check me-2 mt-1"></i><span>MBBS &amp; MD qualified dermatologist with 12+ years of clinical practice.</span></li>
+          <li class="d-flex align-items-start"><i class="fa-regular fa-square-check me-2 mt-1"></i><span>Expertise in medical, cosmetic &amp; surgical dermatology across all skin types.</span></li>
+          <li class="d-flex align-items-start"><i class="fa-regular fa-square-check me-2 mt-1"></i><span>Personalised treatment plans tailored to each patient's unique skin needs.</span></li>
+          <li class="d-flex align-items-start"><i class="fa-regular fa-square-check me-2 mt-1"></i><span>Proficient in advanced laser technologies including Q-switch, CO₂ &amp; diode lasers.</span></li>
+          <li class="d-flex align-items-start"><i class="fa-regular fa-square-check me-2 mt-1"></i><span>Trained in PRP therapy, hair restoration &amp; anti-ageing injectables.</span></li>
+          <li class="d-flex align-items-start"><i class="fa-regular fa-square-check me-2 mt-1"></i><span>Committed to natural, lasting results through honest, patient-first care.</span></li>
+        </ul>
+      </div>
+
+      <!-- Skill bars -->
+      <div class="col-lg-6 mt-5 mt-lg-0" data-aos="fade-left">
+        <span class="section-label">Clinical Proficiency</span>
+        <h3 class="split-subheading mt-2 mb-3">My Expertise</h3>
+        <p class="description text-muted mb-4">
+          Dr. Pradnya's practice covers the full spectrum of skin and hair care — from preventive dermatology to advanced cosmetic procedures.
+        </p>
+        <div class="d-flex flex-column gap-4">
+          <div>
+            <div class="d-flex justify-content-between mb-2">
+              <span class="skill-name">Medical Dermatology</span>
+              <span class="skill-value">97%</span>
+            </div>
+            <div class="progress custom-track-base">
+              <div class="progress-bar custom-fill" role="progressbar" style="width:97%" aria-valuenow="97" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div>
+            <div class="d-flex justify-content-between mb-2">
+              <span class="skill-name">Advanced Laser Treatments</span>
+              <span class="skill-value">95%</span>
+            </div>
+            <div class="progress custom-track-base">
+              <div class="progress-bar custom-fill" role="progressbar" style="width:95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div>
+            <div class="d-flex justify-content-between mb-2">
+              <span class="skill-name">PRP &amp; Hair Restoration</span>
+              <span class="skill-value">93%</span>
+            </div>
+            <div class="progress custom-track-base">
+              <div class="progress-bar custom-fill" role="progressbar" style="width:93%" aria-valuenow="93" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div>
+            <div class="d-flex justify-content-between mb-2">
+              <span class="skill-name">Aesthetic &amp; Anti-Ageing Medicine</span>
+              <span class="skill-value">92%</span>
+            </div>
+            <div class="progress custom-track-base">
+              <div class="progress-bar custom-fill" role="progressbar" style="width:92%" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- /layer 2 -->
+
+    <!-- ─── LAYER 3: EDUCATION & QUALIFICATIONS TIMELINE ─── -->
+    <div class="row g-5 align-items-start mb-5 pt-2">
+      <div class="col-lg-6" data-aos="fade-right">
+        <span class="section-label">Academic Background</span>
+        <h3 class="split-subheading mt-2 mb-4">Education &amp; Qualifications</h3>
+        <div class="edu-timeline">
+
+          <div class="edu-item">
+            <div class="edu-dot"></div>
+            <span class="edu-year">MBBS</span>
+            <p class="edu-degree">Bachelor of Medicine &amp; Bachelor of Surgery</p>
+            <p class="edu-college">Medical College, Maharashtra, India</p>
+          </div>
+
+          <div class="edu-item">
+            <div class="edu-dot"></div>
+            <span class="edu-year">MD – Dermatology</span>
+            <p class="edu-degree">Doctor of Medicine in Dermatology, Venereology &amp; Leprosy</p>
+            <p class="edu-college">Postgraduate Medical College, Maharashtra, India</p>
+          </div>
+
+          <div class="edu-item">
+            <div class="edu-dot"></div>
+            <span class="edu-year">Fellowship</span>
+            <p class="edu-degree">Advanced Training in Aesthetic Medicine &amp; Laser Dermatology</p>
+            <p class="edu-college">Hands-on training in laser technologies, chemical peels &amp; injectables</p>
+          </div>
+
+          <div class="edu-item">
+            <div class="edu-dot"></div>
+            <span class="edu-year">Memberships</span>
+            <p class="edu-degree">Indian Association of Dermatologists, Venereologists &amp; Leprologists (IADVL)</p>
+            <p class="edu-college">Active member contributing to dermatology research &amp; education</p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Specialization cards -->
+      <div class="col-lg-6" data-aos="fade-left">
+        <span class="section-label">Areas of Practice</span>
+        <h3 class="split-subheading mt-2 mb-4">Specializations</h3>
+        <div class="row g-3">
+          <div class="col-sm-6">
+            <div class="spec-card">
+              <div class="spec-icon-wrap"><i class="fa-solid fa-face-smile"></i></div>
+              <p class="spec-title">Acne &amp; Pigmentation</p>
+              <p class="spec-desc">Comprehensive treatment for acne, acne scars, melasma, and pigmentation disorders.</p>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="spec-card">
+              <div class="spec-icon-wrap"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+              <p class="spec-title">Laser Treatments</p>
+              <p class="spec-desc">Q-switch, CO₂, diode &amp; IPL lasers for skin rejuvenation, tattoo removal &amp; hair reduction.</p>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="spec-card">
+              <div class="spec-icon-wrap"><i class="fa-solid fa-dna"></i></div>
+              <p class="spec-title">PRP &amp; Hair Restoration</p>
+              <p class="spec-desc">Platelet-Rich Plasma therapy for hair loss, thinning &amp; scalp rejuvenation.</p>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="spec-card">
+              <div class="spec-icon-wrap"><i class="fa-solid fa-star-of-life"></i></div>
+              <p class="spec-title">Anti-Ageing &amp; Aesthetics</p>
+              <p class="spec-desc">Botox, fillers, chemical peels, mesotherapy &amp; non-surgical face lifting.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- /layer 3 -->
+
+    <!-- ─── LAYER 4: APPOINTMENT FORM ─── -->
+    <div class="appointment-outer-card p-4 p-md-5 mt-5" data-aos="fade-up">
+      <div class="row g-4 align-items-stretch">
+
+        <!-- Image + Hours -->
+        <div class="col-lg-5 position-relative" data-aos="fade-right">
+          <div class="form-side-img-wrap h-100 shadow-sm position-relative">
+            <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=700"
+                 alt="La Aesthetique clinic" class="sync-crop-img img-form-side">
+            <div class="hours-pane p-4 d-flex align-items-center position-absolute bottom-0 start-0 w-100">
+              <div class="hours-icon-box me-3"><i class="fa-regular fa-clock"></i></div>
+              <div class="text-white">
+                <h5 class="hours-title m-0 mb-1">Opening Hours</h5>
+                <p class="m-0 opacity-75 small">Mon – Sat : 10:00 am to 7:00 pm<br>Sunday : Closed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div class="col-lg-7 ps-lg-4 d-flex flex-column justify-content-center" data-aos="fade-left">
+          <div class="mb-4">
+            <span class="section-label">Direct Consultation</span>
+            <h3 class="form-title-heading mt-2 mb-2">Get In Touch With Us</h3>
+            <p class="description text-muted m-0">Have a skin or hair concern? Reach out for expert guidance and personalised treatment planning from Dr. Pradnya Asutkar.</p>
+          </div>
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <input type="text" class="form-control custom-input" placeholder="First Name">
+            </div>
+            <div class="col-sm-6">
+              <input type="text" class="form-control custom-input" placeholder="Last Name">
+            </div>
+            <div class="col-sm-6">
+              <input type="email" class="form-control custom-input" placeholder="E-mail Address">
+            </div>
+            <div class="col-sm-6">
+              <input type="tel" class="form-control custom-input" placeholder="Phone Number">
+            </div>
+            <div class="col-12">
+              <textarea class="form-control custom-input" rows="4" placeholder="Write your message or describe your concern…"></textarea>
+            </div>
+            <div class="col-12 mt-2">
+             <a href="https://wa.me/918459323304?text=Hello,%20I%20am%20interested%20in%20your%20services!" target="_blank" class="btn btn-dark-emerald px-4 py-2.5 text-white">
+    Send Message <i class="fa-solid fa-arrow-right ms-2 small-arrow"></i>
+</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div><!-- /layer 4 -->
+
+  </div><!-- /container -->
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer-section py-5">
+  <div class="container container-dark-footer shadow p-4 p-md-5 position-relative overflow-hidden">
+
+    <div class="footer-decor-branch bottom-left-branch d-none d-lg-block"></div>
+    <div class="footer-decor-branch top-right-branch d-none d-lg-block"></div>
+
+    <div class="row g-4 position-relative z-1 mb-5">
+
+      <div class="col-lg-4 col-md-6">
+        <div class="mb-3">
+          <img src="logo.png" alt="La Aesthetique - Skin, Hair & Laser" style="height: 50px;">
+        </div>
+        <p class="brand-tagline mb-4">La Aesthetique combines advanced dermatology, hair restoration and laser technology with a personal touch for healthy, confident skin.</p>
+        <div class="newsletter-form-group d-flex align-items-center p-1 bg-white">
+          <input type="email" class="form-control border-0 px-3" placeholder="Enter your email" aria-label="Newsletter email">
+          <button class="btn btn-newsletter-submit d-flex align-items-center justify-content-center"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 ps-lg-4">
+        <h5 class="column-heading mb-4">Contact Us</h5>
+        <div class="d-flex flex-column gap-3">
+          <div class="contact-badge-item d-flex align-items-center">
+            <div class="contact-icon-sphere d-flex align-items-center justify-content-center me-3"><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <span class="badge-label d-block text-uppercase">For Appointments</span>
+              <span class="badge-data">+91 84593 23304</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <h5 class="column-heading mb-4">Get In Touch</h5>
+        <div class="mb-4">
+          <span class="touch-label d-block mb-1">Location</span>
+          <p class="touch-data m-0">La Aesthetique, Skin, Hair &amp;<br>Laser Clinic, Nagpur, Maharashtra</p>
+        </div>
+        <div>
+          <span class="touch-label d-block mb-1">Email</span>
+          <a href="mailto:info@laaesthetique.com" class="touch-data text-decoration-none">info@laaesthetique.com</a>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-md-6">
+        <h5 class="column-heading mb-4">Quick Links</h5>
+        <ul class="list-unstyled footer-links-list d-flex flex-column gap-2 m-0">
+          <li><a href="index.html" class="text-decoration-none">Home</a></li>
+          <li><a href="about.html" class="text-decoration-none">About Us</a></li>
+          <li><a href="service.html" class="text-decoration-none">Our Services</a></li>
+          <li><a href="doctor.html" class="text-decoration-none">Doctor</a></li>
+          <li><a href="contact.html" class="text-decoration-none">Contact Us</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <hr class="footer-divider-line mb-4">
+
+    <div class="row align-items-center justify-content-between g-3 position-relative z-1">
+      <div class="col-md-6 text-center text-md-start">
+        <p class="copyright-txt m-0">Copyright &copy; 2026 La Aesthetique. All Rights Reserved.</p>
+      </div>
+      <div class="col-md-6">
+        <div class="d-flex align-items-center justify-content-center justify-content-md-end gap-3">
+          <span class="social-label text-uppercase fw-semibold me-2">Follow Us On Social</span>
+          <a href="#" class="social-icon-box d-flex align-items-center justify-content-center text-decoration-none" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="social-icon-box d-flex align-items-center justify-content-center text-decoration-none" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="social-icon-box d-flex align-items-center justify-content-center text-decoration-none" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+<style>
+  /* Footer styles */
+  .container-dark-footer { background: #0ca7a1; border-radius: 32px; color: #fff; }
+  .column-heading { font-size: 1.2rem; font-weight: 600; color: #fff; }
+  .brand-tagline  { font-size: .9rem; color: #cddbd1; line-height: 1.5; }
+  .newsletter-form-group { border-radius: 14px; max-width: 320px; }
+  .newsletter-form-group input { font-size: .85rem; color: #333; box-shadow: none !important; }
+  .btn-newsletter-submit { background: #dc448d; color: #fff; width: 40px; height: 40px; border-radius: 10px; border: none; font-size: .9rem; transition: background .2s; }
+  .btn-newsletter-submit:hover { background: #274738; }
+  .contact-icon-sphere { width: 44px; height: 44px; background: #fff; color: #dc448d; border-radius: 12px; font-size: 1rem; flex-shrink: 0; }
+  .badge-label { font-size: .72rem; color: #a4beab; letter-spacing: .3px; }
+  .badge-data   { font-size: .95rem; font-weight: 500; color: #fff; }
+  .touch-label  { font-size: 1.05rem; font-weight: 500; color: #fff; }
+  .touch-data   { font-size: .9rem; color: #cddbd1; line-height: 1.4; }
+  .footer-links-list a { color: #cddbd1; font-size: .9rem; transition: color .2s, padding-left .2s; }
+  .footer-links-list a:hover { color: #fff; padding-left: 2px; }
+  .footer-divider-line { border-color: rgba(255,255,255,.12); margin: 0; }
+  .copyright-txt { font-size: .85rem; color: #a4beab; }
+  .social-label  { font-size: .78rem; color: #a4beab; letter-spacing: .5px; }
+  .social-icon-box { background: #fff; color: #dc448d; width: 36px; height: 36px; border-radius: 10px; font-size: .9rem; transition: transform .2s, background .2s, color .2s; }
+  .social-icon-box:hover { transform: translateY(-2px); background: #a4beab; color: #1a3026; }
+  .footer-decor-branch { position: absolute; width: 160px; height: 160px; opacity: .06; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='1'%3E%3Cpath d='M2 22C12 22 17 12 22 2M12 14c2-3 5-4 7-5M7 18c1-2 3-3 5-3'/%3E%3C/svg%3E"); background-size: contain; background-repeat: no-repeat; }
+  .footer-decor-branch.bottom-left-branch { bottom: 10px; left: 10px; }
+  .footer-decor-branch.top-right-branch   { top: 10px; right: 10px; transform: rotate(180deg); }
+  @media (max-width: 991.98px) { .newsletter-form-group { max-width: 100%; } }
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+<script>
+  AOS.init({ duration: 800, easing: 'ease-out-cubic', once: true, offset: 80 });
+</script>
+</body>
+</html>
